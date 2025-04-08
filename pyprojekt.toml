@@ -1,0 +1,11 @@
+[tool.black]
+exclude = '''
+(
+    \.db
+    | \.json
+    | \.txt
+    | \.pyc
+    | \.yml
+    | \.md
+)
+'''

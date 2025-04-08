@@ -1,0 +1,2185 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "What was the main currency in Club Penguin?",
+      "correct_answer": "Coins",
+      "incorrect_answers": ["Stamps", "Tickets", "Gems"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Video Games",
+      "question": "How long was the World Record Speed Run of Valve Software&#039;s &quot;Half-Life&quot; that was done in 2014.",
+      "correct_answer": "20 Minutes, 41 Seconds",
+      "incorrect_answers": [
+        "45 Minutes, 32 Seconds",
+        "5 Minutes, 50 Seconds",
+        "12 Minutes, 59 Seconds"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Video Games",
+      "question": "&quot;Minecraft&quot; was released from beta in 2011 during a convention held in which city?",
+      "correct_answer": "Las Vegas",
+      "incorrect_answers": ["Paris", "Bellevue", "London"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Video Games",
+      "question": "In TF2 Lore, what are the names of the Heavy&#039;s younger sisters?",
+      "correct_answer": "Yana and Bronislava",
+      "incorrect_answers": [
+        "Gaba and Anna",
+        "Yanna and Gaba",
+        "Anna and Bronislava"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Video Games",
+      "question": "Which Kirby game first introduced Copy Abilities?",
+      "correct_answer": "Kirby&#039;s Adventure",
+      "incorrect_answers": [
+        "Kirby Super Star",
+        "Kirby&#039;s Dream Land 2",
+        "Kirby&#039;s Dream Land"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Video Games",
+      "question": "What was the name of the hero in the 80s animated video game &#039;Dragon&#039;s Lair&#039;?",
+      "correct_answer": "Dirk the Daring",
+      "incorrect_answers": ["Arthur", "Sir Toby Belch", "Guy of Gisbourne"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "In World of Warcraft lore, who was first to have the title &quot;The Ashbringer&quot;?",
+      "correct_answer": "Alexandros Mograine",
+      "incorrect_answers": [
+        "Tirion Fordring",
+        "Arthas Menethil",
+        "Uther the Lightbringer"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "What is the original name of Final Fantasy XV?",
+      "correct_answer": "Final Fantasy Versus XIII",
+      "incorrect_answers": [
+        "Final Fantasy: Reborn",
+        "Final Fantasy XVI",
+        "Final Fantasy XIII-3"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Video Games",
+      "question": "Which one of these characters is NOT a playable fighter in Super Smash Bros. Ultimate?",
+      "correct_answer": "Kumatora",
+      "incorrect_answers": ["King K. Rool", "Incineroar", "Corrin"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Video Games",
+      "question": "In Minecraft, which two items must be combined to craft a torch?",
+      "correct_answer": "Stick and Coal",
+      "incorrect_answers": ["Stick and Fire", "Wood and Coal", "Wood and Fire"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "Which of these Counter-Strike maps is a bomb defuse scenario?",
+      "correct_answer": "Prodigy",
+      "incorrect_answers": ["747", "Havana", "Oilrig"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Video Games",
+      "question": "Which Greek letter represents the &quot;Half-Life&quot; logo?",
+      "correct_answer": "Lambda",
+      "incorrect_answers": ["Omega", "Alpha", "Sigma"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Video Games",
+      "question": "The creation of the  Entertainment Software Ratings Board (ESRB) is often associated with Mortal Kombat and what FMV video game?",
+      "correct_answer": "Night Trap",
+      "incorrect_answers": [
+        "Sewer Shark",
+        "The Daedalus Encounter",
+        "Corpse Killer"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Video Games",
+      "question": "In &quot;Starbound&quot;, according to the asset files, the description of the &quot;Erchius Ghost&quot; is the same as which other assets?",
+      "correct_answer": "Spookit",
+      "incorrect_answers": ["Petricub", "Trictus", "Pyromantle"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "Which Crypt of the NecroDancer (2015) character has a soundtrack by Jake &quot;Virt&quot; Kaufman?",
+      "correct_answer": "Uncle Eli",
+      "incorrect_answers": ["Cadence", "Nocturna", "Octavian (Bard)"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Video Games",
+      "question": "The voice actor for which Portal 2 character was not a TV or film actor prior to the game?",
+      "correct_answer": "GLaDOS",
+      "incorrect_answers": ["Cave Johnson", "Wheatley", "Atlas / P-Body"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "Which car is NOT featured in &quot;Need for Speed: Hot Pursuit 2&quot;?",
+      "correct_answer": "Toyota MR2",
+      "incorrect_answers": ["Ford Crown Victoria", "BMW Z8", "McLaren F1"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "In Overwatch, what is L&uacute;cio&#039;s full name?",
+      "correct_answer": "L&uacute;cio Correia Dos Santos",
+      "incorrect_answers": [
+        "L&uacute;cio Luiz L&oacute;s Guilherme",
+        "L&uacute;cio Jo&atilde;o Lucas",
+        "L&uacute;cio Chupar Prima"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "Who was the first female protagonist in a video game?",
+      "correct_answer": "Samus Aran",
+      "incorrect_answers": ["Lara Croft", "Alis Landale", "Chell"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Video Games",
+      "question": "In the game &quot;Fire Emblem: Shadow Dragon&quot;, what is the central protagonist&#039;s name?",
+      "correct_answer": "Marth",
+      "incorrect_answers": ["Roy", "Eliwood", "Robin"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "In Fallout: New Vegas, upon starting each one of the four campaign DLCs, which one of them does not have a warning screen/recommended level? ",
+      "correct_answer": "Honest Hearts ",
+      "incorrect_answers": ["Old World Blues", "Lonesome Road", "Dead Money"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "What is the main character&#039;s name in &quot;Braid&quot;?",
+      "correct_answer": "Tim",
+      "incorrect_answers": ["Boregard", "James", "Jackson"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Video Games",
+      "question": "Which of the following Zelda games did not feature Ganon as a final boss?",
+      "correct_answer": "Majora&#039;s Mask",
+      "incorrect_answers": [
+        "Ocarina of Time",
+        "Skyward Sword",
+        "Breath of the Wild"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "In the Super Smash Bros. series, which game first featured Luigi as a playable character?",
+      "correct_answer": "Super Smash Bros.",
+      "incorrect_answers": [
+        "Super Smash Bros. Melee",
+        "Super Smash Bros. Brawl",
+        "Super Smash Bros. for Wii U"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Video Games",
+      "question": "Which of these characters is the mascot of the video game company SEGA?",
+      "correct_answer": "Sonic the Hedgehog",
+      "incorrect_answers": ["Dynamite Headdy", "Alex Kidd", "Opa-Opa"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Video Games",
+      "question": "In the Mario Kart series, which game introduced the &quot;Shield Drifting&quot; mechanic?",
+      "correct_answer": "Mario Kart Arcade GP DX",
+      "incorrect_answers": [
+        "Mario Kart: Double Dash",
+        "Mario Kart Super Circuit",
+        "Mario Kart DS"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Video Games",
+      "question": "In World of Warcraft lore, which of the following is known as the God of Spiders in the troll&#039;s loa beliefs?",
+      "correct_answer": "Elortha no Shadra",
+      "incorrect_answers": ["Bwonsamdi", "Hakkar", "Shirvallah"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "Which of these characters was NOT planned to be playable for Super Smash Bros. 64?",
+      "correct_answer": "Peach",
+      "incorrect_answers": ["Bowser", "Mewtwo", "King Dedede"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Video Games",
+      "question": "Which monster in &quot;Monster Hunter Tri&quot; was causing earthquakes in Moga Village?",
+      "correct_answer": "Ceadeus",
+      "incorrect_answers": ["Alatreon", "Rathalos", "Lagiacrus"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Video Games",
+      "question": "What is the name of the adventurer you meet at the mines in Stardew Valley?",
+      "correct_answer": "Marlon",
+      "incorrect_answers": ["Marnie", "Morris", "Marvin"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "What is the name the location-based augmented reality game developed by Niantic before Pok&eacute;mon GO?",
+      "correct_answer": "Ingress",
+      "incorrect_answers": ["Aggress", "Regress", "Digress"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Video Games",
+      "question": "Which game did &quot;Sonic The Hedgehog&quot; make his first appearance in?",
+      "correct_answer": "Rad Mobile",
+      "incorrect_answers": ["Sonic The Hedgehog", "Super Mario 64", "Mega Man"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "Who is the main character in the video game &quot;Just Cause 3&quot;?",
+      "correct_answer": "Rico Rodriguez",
+      "incorrect_answers": ["Tom Sheldon", "Marcus Holloway", "Mario Frigo"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "What is a Tetris piece called?",
+      "correct_answer": "Tetromino",
+      "incorrect_answers": ["Tetratile", "Tetris", "Tetripiece"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "Which of the following is NOT an official game in Nintendo&#039;s Super Smash Bros. series?",
+      "correct_answer": "Super Smash Bros. Crusade",
+      "incorrect_answers": [
+        "Super Smash Bros. Melee",
+        "Super Smash Bros. Brawl",
+        "Super Smash Bros. for Nintendo 3DS and Wii U"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "The &#039;64&#039; in the Nintendo-64 console refers to what?",
+      "correct_answer": "The bits in the CPU architecture",
+      "incorrect_answers": [
+        "The number of megabytes of RAM",
+        "Capacity of the ROM Cartridges in megabytes",
+        "Clock speed of the CPU in Hertz"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "Which of these games was NOT a Nintendo Switch launch title in the United States? ",
+      "correct_answer": "Voez",
+      "incorrect_answers": ["Just Dance 2017", "Snipperclips", "Fast RMX"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Video Games",
+      "question": "Which of these is NOT the name of a rival gang in the video game Saint&#039;s Row 2?",
+      "correct_answer": "The Zin Empire",
+      "incorrect_answers": [
+        "The Brotherhood",
+        "The Ronin",
+        "The Sons of Samedi"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Video Games",
+      "question": "What was the world&#039;s first video game?",
+      "correct_answer": "Tennis for Two",
+      "incorrect_answers": ["Spacewar!", "Pong", "Space Travel"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "In the 2015 RPG &quot;Undertale&quot;, which character do you first encounter after falling down into the underground?",
+      "correct_answer": "Flowey",
+      "incorrect_answers": ["Toriel", "Sans", "Papyrus"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "Which of these weapons is NOT available to the Terrorist team in the game, &quot;Counter-Strike: Global Offensive&quot;?",
+      "correct_answer": "SCAR-20",
+      "incorrect_answers": ["SG 550", "CZ-75", "XM1014"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "In the &quot;Call Of Duty: Zombies&quot; map &quot;Moon&quot;, there is a secondary called the QED. What does QED stand for?",
+      "correct_answer": "Quantum Entanglement Device",
+      "incorrect_answers": [
+        "Quad Ectoplasmic Driver",
+        "Question Every Dog",
+        "Quality Edward Device"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "What is the name of the 8th installment in the Fire Emblem series?",
+      "correct_answer": "The Sacred Stones",
+      "incorrect_answers": ["Blazing Sword", "Awakening", "Path of Radiance"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Video Games",
+      "question": "Which one of these characters appeared in Marvel vs Capcom: Infinite? ",
+      "correct_answer": "Firebrand",
+      "incorrect_answers": ["Wolverine", "Dr. Doom", "Jill Valentine"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Video Games",
+      "question": "Which of the following games in the The Legend of Zelda franchise was released in North America before Japan?",
+      "correct_answer": "The Legend of Zelda: Twilight Princess",
+      "incorrect_answers": [
+        "Zelda II: The Adventure of Link",
+        "The Legend of Zelda: Four Swords Adventures",
+        "The Legend of Zelda: Majora&#039;s Mask"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "The walls of the Goldenrod City Gym in &quot;Pok&eacute;mon Gold and Silver&quot; are arranged in the shape of which Pok&eacute;mon?",
+      "correct_answer": "Clefairy",
+      "incorrect_answers": ["Bulbasaur", "Pikachu", "Pidgey"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Video Games",
+      "question": "In Pokemon Red &amp; Blue, what is the name of HM05?",
+      "correct_answer": "Flash",
+      "incorrect_answers": ["Strength", "Cut", "Fly"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Video Games",
+      "question": "In the game Enter the Gungeon, which one of these is not a playable character?",
+      "correct_answer": "The Wizard",
+      "incorrect_answers": ["The Bullet", "The Robot", "The Cultist"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Video Games",
+      "question": "In the &quot;Little Lost Girl&quot; Easter Egg in Call of Duty: Black Ops II, what&#039;s the last step required for the achievement?",
+      "correct_answer": "Raise Hell",
+      "incorrect_answers": [
+        "Freedom",
+        "Skewer the Winged Beast",
+        "Ascend from Darkness"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "What is the subtitle for Gran Turismo 3?",
+      "correct_answer": "A-Spec",
+      "incorrect_answers": ["Championship", "Drive", "Nitro"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "Colchester Overpass, otherwise known as &quot;Bunny Man Bridge&quot;, is located where?",
+      "correct_answer": "Fairfax County, Virginia",
+      "incorrect_answers": [
+        "Medford, Oregon",
+        "Braxton County, Virgina",
+        "Lemon Grove, California"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Geography",
+      "question": "What year is on the flag of the US state Wisconsin?",
+      "correct_answer": "1848",
+      "incorrect_answers": ["1634", "1783", "1901"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "On which continent is the country of Angola located?",
+      "correct_answer": "Africa",
+      "incorrect_answers": ["South America", "Europe", "Asia"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "Which of the following is not a megadiverse country - one that harbors a high number of the earth&#039;s endemic species?",
+      "correct_answer": "Thailand",
+      "incorrect_answers": ["Peru", "Mexico", "South Africa"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "How many independent countries are there within the continent of South America?",
+      "correct_answer": "12",
+      "incorrect_answers": ["8", "9", "10"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "Where is the area commonly known as the Bermuda Triangle?",
+      "correct_answer": "North Atlantic Ocean, between Florida and Puerto Rico",
+      "incorrect_answers": [
+        "North Pacific Ocean, between Japan and the USA",
+        "In the Caribbean Sea",
+        "South Pacific Ocean, far off Chile"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "How many countries are larger than Australia?",
+      "correct_answer": "5",
+      "incorrect_answers": ["4", "3", "6"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "In which country is the city of Rio de Janeiro?",
+      "correct_answer": "Brazil",
+      "incorrect_answers": ["Peru", "Chile", "Venezuela"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Geography",
+      "question": "The Hunua Ranges is located in...",
+      "correct_answer": "New Zealand",
+      "incorrect_answers": ["Nepal", "China", "Mexico"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "The historical city Timbuktu is located in which West African country?",
+      "correct_answer": "Mali",
+      "incorrect_answers": ["Senegal", "Niger", "Burkina Faso"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "Where are the Nazca Lines located?",
+      "correct_answer": "Peru",
+      "incorrect_answers": ["Brazil", "Colombia", "Ecuador"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "What mountain range lines the border between Spain and France?",
+      "correct_answer": "Pyrenees",
+      "incorrect_answers": ["Alps", "Carpathians", "Urals"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "What is the only state in the United States that does not have a flag in a shape with 4 edges?",
+      "correct_answer": "Ohio",
+      "incorrect_answers": ["Florida", "Idaho", "New Mexico"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Geography",
+      "question": "In 2012 the German-speaking microstate &quot;Liechtenstein&quot; in Central Europe had a population of how many inhabitants?",
+      "correct_answer": "36,600",
+      "incorrect_answers": ["2,400", "90,000", "323,400"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "Which two modern-day countries used to be known as the region of Rhodesia between the 1890s and 1980?",
+      "correct_answer": "Zambia &amp; Zimbabwe",
+      "incorrect_answers": [
+        "Togo &amp; Benin",
+        "Lesotho &amp; Swaziland",
+        "Rwanda &amp; Burundi"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Geography",
+      "question": "What is the land connecting North America and South America?",
+      "correct_answer": "Isthmus of Panama",
+      "incorrect_answers": ["Isthmus of Suez", "Urals", "Australasia"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "What is the capital of British Columbia, Canada?",
+      "correct_answer": "Victoria",
+      "incorrect_answers": ["Vancouver", "Hope", "Kelowna"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Geography",
+      "question": "What is the area of Vatican City?",
+      "correct_answer": "0.44km^2",
+      "incorrect_answers": ["0.10km^2", "0.86km^2", "12.00km^2"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "Which of the following languages does NOT use the Latin alphabet?",
+      "correct_answer": "Georgian",
+      "incorrect_answers": ["Turkish", "Swahili", "Vietnamese"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "What was the African nation of Zimbabwe formerly known as?",
+      "correct_answer": "Rhodesia",
+      "incorrect_answers": ["Zambia", "Mozambique", " Bulawayo"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "What is the busiest port in Europe?",
+      "correct_answer": "Port of Rotterdam",
+      "incorrect_answers": [
+        "Port of Antwerp",
+        "Port of Hamburg",
+        "Port of Amsterdam"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "How many countries does the United States share a land border with?",
+      "correct_answer": "2",
+      "incorrect_answers": ["1", "3", "4"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "How many countries are inside the United Kingdom?",
+      "correct_answer": "Four",
+      "incorrect_answers": ["Two", "Three", "One"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "Which of these countries is not written in its native language?",
+      "correct_answer": "Slova&scaron;ko",
+      "incorrect_answers": ["Suomi", "Schweiz", "Ell&aacute;da"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "The Japanese district Akihabara is also known by what nickname?",
+      "correct_answer": "Electric Town",
+      "incorrect_answers": ["Moon Walk River", "Otaku Central ", "Big Eyes"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "What event led to Liechenstein adding a crown to its flag?",
+      "correct_answer": "The 1936 Olympics",
+      "incorrect_answers": [
+        "Coronation of Prince Johann I Joseph in 1805",
+        "Charles VI&#039;s decree in 1719",
+        "Signing of the 1862 Constitution of Liechtenstein"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "The Pyrenees mountains are located on the border of which two countries?",
+      "correct_answer": "France and Spain",
+      "incorrect_answers": [
+        "Italy and Switzerland",
+        "Norway and Sweden",
+        "Russia and Ukraine"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "Which of these countries is not a United Nations member state?",
+      "correct_answer": "Niue",
+      "incorrect_answers": ["Tuvalu", "South Sudan", "Montenegro"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "What is the longest river in Europe?",
+      "correct_answer": "Volga",
+      "incorrect_answers": ["Danube", "Rhine", "Thames"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Geography",
+      "question": "What is the capital of Wisconsin, USA?",
+      "correct_answer": "Madison",
+      "incorrect_answers": ["Milwaukee", "Wisconsin Dells", "Green Bay"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "What is the name of the former country that was succeeded by countries such as Serbia, Croatia and Slovenia?",
+      "correct_answer": "Yugoslavia",
+      "incorrect_answers": ["Czechoslovakia", "Abkhazia", "South Ossetia"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "What is the capital of the US state Nevada?",
+      "correct_answer": "Carson City",
+      "incorrect_answers": ["Las Vegas", "Henderson", "Reno"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Geography",
+      "question": "What national museum will you find in Cooperstown, New York?",
+      "correct_answer": "National Baseball Hall of Fame",
+      "incorrect_answers": [
+        "Metropolitan Museum of Art",
+        "National Toy Hall of Fame",
+        "Museum of Modern Art"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Geography",
+      "question": "How many countries border Kyrgyzstan?",
+      "correct_answer": "4",
+      "incorrect_answers": ["3", "1", "6"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "All of the following countries have official claims to territory in Antartica EXCEPT:",
+      "correct_answer": "United States",
+      "incorrect_answers": ["Australia", "Chile", "Norway"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "What is the region conjoining Pakistan, India, and China with unknown leadership called?",
+      "correct_answer": "Kashmir",
+      "incorrect_answers": ["Andorra", "Gibraltar", "Quin"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "Which of these is NOT a city in Saudi Arabia?",
+      "correct_answer": "Dubai",
+      "incorrect_answers": ["Riyadh", "Mecca", "Medina"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "Montreal is in which Canadian province?",
+      "correct_answer": "Quebec",
+      "incorrect_answers": ["Ontario", "Nova Scotia", "Alberta"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "What is the capital of Denmark?",
+      "correct_answer": "Copenhagen",
+      "incorrect_answers": ["Aarhus", "Odense", "Aalborg"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "How many federal states does Germany have?",
+      "correct_answer": "16",
+      "incorrect_answers": ["13", "32", "25"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "What is the capital of Seychelles?",
+      "correct_answer": "Victoria",
+      "incorrect_answers": ["Luanda", "N&#039;Djamena", "Tripoli"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "Which of these is NOT an Australian state or territory?",
+      "correct_answer": "Alberta",
+      "incorrect_answers": ["New South Wales", "Victoria", "Queensland"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "How many counties in the Republic of Ireland.",
+      "correct_answer": "26",
+      "incorrect_answers": ["32", "28", "30"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "What is the largest lake in the African continent?",
+      "correct_answer": "Lake Victoria",
+      "incorrect_answers": ["Lake Tanganyika", "Lake Malawi", "Lake Turkana"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Geography",
+      "question": "Which of these cities is NOT in England?",
+      "correct_answer": "Edinburgh",
+      "incorrect_answers": ["Oxford", "Manchester", "Southampton"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "What is the largest non-continental island in the world?",
+      "correct_answer": "Greenland",
+      "incorrect_answers": ["New Guinea", "Borneo", "Madagascar"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Geography",
+      "question": "When does Finland celebrate their independence day?",
+      "correct_answer": "December 6th",
+      "incorrect_answers": ["January 2nd", "November 12th", "February 8th"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Geography",
+      "question": "Bir Tawil, an uninhabited track of land claimed by no country, is located along the border of which two countries?",
+      "correct_answer": "Egypt and Sudan",
+      "incorrect_answers": [
+        "Israel and Jordan",
+        "Chad and Libya",
+        "Iraq and Saudi Arabia"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "Where is Hadrian&#039;s Wall located?",
+      "correct_answer": "Carlisle, England",
+      "incorrect_answers": [
+        "Rome, Italy",
+        "Alexandria, Egypt",
+        "Dublin, Ireland"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "Which country inside the United Kingdom does NOT appear on its flag, the Union Jack?",
+      "correct_answer": "Wales",
+      "incorrect_answers": ["Scotland", "Ireland", "Isle of Wight"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "General Knowledge",
+      "question": "According to Fair Works Australia, how long do you have to work to get Long Service Leave?",
+      "correct_answer": "7 years",
+      "incorrect_answers": ["2 years", "8 years", "6 months"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "General Knowledge",
+      "question": "De Eemhof, Port Zelande and Het Heijderbos are holiday villas owned by what company?",
+      "correct_answer": "Center Parcs",
+      "incorrect_answers": ["Yelloh Village", "Keycamp", "Villa Plus"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "Who is the youngest person to receive a Nobel Prize?",
+      "correct_answer": "Malala Yousafzai",
+      "incorrect_answers": [
+        "Lawrence Bragg",
+        "Werner Heisenberg",
+        "Yasser Arafat"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "General Knowledge",
+      "question": "What is the name of the very first video uploaded to YouTube?",
+      "correct_answer": "Me at the zoo",
+      "incorrect_answers": [
+        "tribute",
+        "carrie rides a truck",
+        "Her new puppy from great grandpa vern."
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "General Knowledge",
+      "question": "Frank Lloyd Wright was the architect behind what famous building?",
+      "correct_answer": "The Guggenheim",
+      "incorrect_answers": [
+        "Villa Savoye",
+        "Sydney Opera House",
+        "The Space Needle"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "General Knowledge",
+      "question": "Which of the following  British Monarchs never appeared on a circulated pound sterling coin?",
+      "correct_answer": "Edward VIII",
+      "incorrect_answers": ["Victoria", "George VI", "Charles II"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "General Knowledge",
+      "question": "The term &quot;scientist&quot; was coined in which year?",
+      "correct_answer": "1833",
+      "incorrect_answers": ["1933", "1942", "1796"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "General Knowledge",
+      "question": "When did the website &quot;Facebook&quot; launch?",
+      "correct_answer": "2004",
+      "incorrect_answers": ["2005", "2003", "2006"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "What is the shape of the toy invented by Hungarian professor Ernő Rubik?",
+      "correct_answer": "Cube",
+      "incorrect_answers": ["Sphere", "Cylinder", "Pyramid"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "How would one say goodbye in Spanish?",
+      "correct_answer": "Adi&oacute;s",
+      "incorrect_answers": [" Hola", "Au Revoir", "Salir"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "General Knowledge",
+      "question": "When was WhatsApp founded?",
+      "correct_answer": "2009",
+      "incorrect_answers": ["2007", "2012", "2010"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "When one is &quot;envious&quot;, they are said to be what color?",
+      "correct_answer": "Green",
+      "incorrect_answers": ["Red", "Blue", "Yellow"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "What is the nickname of the US state of California?",
+      "correct_answer": "Golden State",
+      "incorrect_answers": ["Sunshine State", "Bay State", "Treasure State"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "General Knowledge",
+      "question": "Macintosh has named six of its operating systems after big cats. What big cat did Macintosh name their 2007 release after? ",
+      "correct_answer": "Leopard",
+      "incorrect_answers": ["Tiger", "Panther", "Puma"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "Who is considered the &quot;Father of Modern Philosophy&quot;?",
+      "correct_answer": "Ren&eacute; Descartes",
+      "incorrect_answers": ["Plato", "Albert Einstein", "Antoine Lavoiser"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "What airline was the owner of the plane that crashed off the coast of Nova Scotia in 1998?",
+      "correct_answer": "Swiss Air",
+      "incorrect_answers": ["Air France", "British Airways", "TWA"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "What machine element is located in the center of fidget spinners?",
+      "correct_answer": "Bearings",
+      "incorrect_answers": ["Axles", "Gears", "Belts"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "General Knowledge",
+      "question": "What is the name of the popular animatronic singing fish prop, singing such hits such as &quot;Don&#039;t Worry, Be Happy&quot;?",
+      "correct_answer": "Big Mouth Billy Bass",
+      "incorrect_answers": ["Big Billy Bass", "Singing Fish", "Sardeen"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "General Knowledge",
+      "question": "Which of the following languages does NOT use gender as a part of its grammar?",
+      "correct_answer": "Turkish",
+      "incorrect_answers": ["German", "Danish", "Polish"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "In which fast food chain can you order a Jamocha Shake?",
+      "correct_answer": "Arby&#039;s",
+      "incorrect_answers": ["McDonald&#039;s", "Burger King", "Wendy&#039;s"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "In past times, what would a gentleman keep in his fob pocket?",
+      "correct_answer": "Watch",
+      "incorrect_answers": ["Money", "Keys", "Notebook"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "General Knowledge",
+      "question": "Where did the pineapple plant originate?",
+      "correct_answer": "South America",
+      "incorrect_answers": ["Hawaii", "Europe", "Asia"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "General Knowledge",
+      "question": "Which of the General Mills Corporation&#039;s monster cereals was the last to be released in the 1970&#039;s?",
+      "correct_answer": "Fruit Brute",
+      "incorrect_answers": ["Count Chocula", "Franken Berry", "Boo-Berry"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "When was Pong released?",
+      "correct_answer": "November 29, 1972",
+      "incorrect_answers": [
+        "March 29, 2017",
+        "November 29, 1970",
+        "December 14, 1974"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "General Knowledge",
+      "question": "A doctor with a PhD is a doctor of what?",
+      "correct_answer": "Philosophy",
+      "incorrect_answers": ["Psychology", "Phrenology", "Physical Therapy"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "General Knowledge",
+      "question": "What is the name given to Indian food cooked over charcoal in a clay oven?",
+      "correct_answer": "Tandoori",
+      "incorrect_answers": ["Biryani", "Pani puri", "Tiki masala"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "General Knowledge",
+      "question": "Which of the following Ivy League universities has its official motto in Hebrew as well as in Latin?",
+      "correct_answer": "Yale University",
+      "incorrect_answers": [
+        "Princeton University",
+        "Harvard University",
+        "Columbia University"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "Which of the following blood component forms a plug at the site of injuries?",
+      "correct_answer": "Platelets",
+      "incorrect_answers": [
+        "Red blood cells",
+        "White blood cells",
+        "Blood plasma"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "What nuts are used in the production of marzipan?",
+      "correct_answer": "Almonds",
+      "incorrect_answers": ["Peanuts", "Walnuts", "Pistachios"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "General Knowledge",
+      "question": "In what year was McDonald&#039;s founded?",
+      "correct_answer": "1955",
+      "incorrect_answers": ["1964", "1951", "1947"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "Which company did Valve cooperate with in the creation of the Vive?",
+      "correct_answer": "HTC",
+      "incorrect_answers": ["Oculus", "Google", "Razer"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "General Knowledge",
+      "question": "What are the three starter Pokemon available in Pokemon Black and White?",
+      "correct_answer": "Snivy, Tepig, Oshawott",
+      "incorrect_answers": [
+        "Snivy, Fennekin, Froakie",
+        "Chespin, Tepig, Froakie",
+        "Chespin, Fennekin, Oshawott"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "What is the name of the main Character from the Series: Dead Space?",
+      "correct_answer": "Isaac Clarke",
+      "incorrect_answers": ["Ellen Ripley", "Commander Shepard", "Captain Kirk"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "When was the Playstation 3 released?",
+      "correct_answer": "November 11, 2006",
+      "incorrect_answers": [
+        "January 8, 2007",
+        "December 25, 2007",
+        "July 16, 2006"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "General Knowledge",
+      "question": "What was the destination of the missing flight MH370?",
+      "correct_answer": "Beijing",
+      "incorrect_answers": ["Kuala Lumpur", "Singapore", "Tokyo"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "In the video-game franchise Kingdom Hearts, the main protagonist, carries a weapon with what shape?",
+      "correct_answer": "Key",
+      "incorrect_answers": ["Sword", "Pen", "Cellphone"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "General Knowledge",
+      "question": "On average, Americans consume 100 pounds of what per second?",
+      "correct_answer": "Chocolate",
+      "incorrect_answers": ["Potatoes", "Donuts", "Cocaine"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "General Knowledge",
+      "question": "In 2013 how much money was lost by Nigerian scams?",
+      "correct_answer": "$12.7 Billion",
+      "incorrect_answers": ["$95 Million", "$956 Million", "$2.7 Billion"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "General Knowledge",
+      "question": "What is the most commonly used noun in the English language?",
+      "correct_answer": "Time",
+      "incorrect_answers": ["Home", "Water", "Man"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "The Flag of the European Union has how many stars on it?",
+      "correct_answer": "12",
+      "incorrect_answers": ["10", "14", "16"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "General Knowledge",
+      "question": "Named after the mallow flower, mauve is a shade of what?",
+      "correct_answer": "Purple",
+      "incorrect_answers": ["Red", "Brown", "Pink"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "General Knowledge",
+      "question": "Virtual reality company Oculus VR lost which of it&#039;s co-founders in a freak car accident in 2013?",
+      "correct_answer": "Andrew Scott Reisse",
+      "incorrect_answers": ["Nate Mitchell", "Jack McCauley", "Palmer Luckey"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "Which of the following card games revolves around numbers and basic math?",
+      "correct_answer": "Uno",
+      "incorrect_answers": ["Go Fish", "Twister", "Munchkin"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "When was the website reddit founded ?",
+      "correct_answer": "2005",
+      "incorrect_answers": ["2008", "2004", "2006"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "General Knowledge",
+      "question": "The Quadrangularis Reversum is best described as which of the following?",
+      "correct_answer": "A percussion instrument",
+      "incorrect_answers": [
+        "A building in Oxford University",
+        "A chess move",
+        "A geometric theorem"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "General Knowledge",
+      "question": "Which film star has his statue in Leicester Square?",
+      "correct_answer": "Charlie Chaplin",
+      "incorrect_answers": [
+        "Paul Newman",
+        "Rowan Atkinson ",
+        "Alfred Hitchcock"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "General Knowledge",
+      "question": "Which musician has collaborated with American producer Porter Robinson and released the 2016 song &quot;Shelter&quot;?",
+      "correct_answer": "Madeon",
+      "incorrect_answers": ["Mat Zo", "deadmau5", "Zedd"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "General Knowledge",
+      "question": "Which of the following chemicals are found in eggplant seeds?",
+      "correct_answer": "Nicotine",
+      "incorrect_answers": ["Mescaline", "Cyanide", "Psilocybin"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "General Knowledge",
+      "question": "In a 1994 CBS interview, Microsoft co-founder Bill Gates performed what unusual trick on camera?",
+      "correct_answer": "Jumping over an office chair",
+      "incorrect_answers": [
+        "Jumping backwards over a desk",
+        "Standing on his head",
+        "Typing on a keyboard during a handstand"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "General Knowledge",
+      "question": "How many notes are there on a standard grand piano?",
+      "correct_answer": "88",
+      "incorrect_answers": ["98", "108", "78"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "Who is the main heroine of the anime, Full Metal Panic!",
+      "correct_answer": "Kaname Chidori",
+      "incorrect_answers": ["Teletha Testarossa", "Melissa Mao", "Kyoko Tokiwa"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "Who is the creator of the manga series &quot;One Piece&quot;?",
+      "correct_answer": "Eiichiro Oda",
+      "incorrect_answers": [
+        "Yoshihiro Togashi",
+        "Hayao Miyazaki",
+        "Masashi Kishimoto"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "What is the name of the corgi in Cowboy Bebop?",
+      "correct_answer": "Einstein",
+      "incorrect_answers": ["Edward", "Rocket", "Joel"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "In Ms. Kobayashi&#039;s Dragon Maid, who is Kobayashi&#039;s maid?",
+      "correct_answer": "Tohru",
+      "incorrect_answers": ["Lucoa", "Kanna", "Elma"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "Which song was the callsign for Stefan Verdemann&#039;s KWFM radio station in Urasawa Naoki&#039;s &quot;Monster&quot;?",
+      "correct_answer": "Over the Rainbow",
+      "incorrect_answers": [
+        "What a Wonderful World",
+        "When You Wish Upon A Star",
+        "Singing In The Rain"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "Which of the following anime of the mecha genre began airing in 1982?",
+      "correct_answer": "The Super Dimension Fortress Macross",
+      "incorrect_answers": [
+        "Mobile Suit Gundam",
+        "Armored Trooper VOTOMS",
+        "Neon Genesis Evangelion"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "Who voices the character &quot;Reigen&quot;  in the English dub of &quot;Mob Psycho 100&quot;?",
+      "correct_answer": "Chris Niosi",
+      "incorrect_answers": ["Max Mittelman", "Kyle McCarley", "Casey Mongillo"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "In &quot;One Piece&quot;, who is the girl who overcame her enslaved past and became an agent of an army to fight the corrupt government?",
+      "correct_answer": "Koala",
+      "incorrect_answers": ["Boa Hancock", "Nico Robin", "Emporio Ivankov "]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "In the anime Initial D, how does Takumi Fujiwara describe a drift?",
+      "correct_answer": "&#039;. . . the front tires slide so the car won&#039;t face the inside&#039;",
+      "incorrect_answers": [
+        "&#039;. . . the wheels lose traction, making the car slide sideways&#039;",
+        "&#039;. . . the car oversteers through a curve, causing it to turn faster&#039;",
+        "&#039;. . . you turn a lot&#039;"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "The main protagonist of the fifth part of JoJo&#039;s Bizarre Adventure is which of the following?",
+      "correct_answer": "Giorno Giovanna",
+      "incorrect_answers": ["Guido Mista", "Jonathan Joestar", "Joey JoJo"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "What is the last line muttered in the anime film &quot;The End of Evangelion&quot;?",
+      "correct_answer": "&quot;How disgusting.&quot;",
+      "incorrect_answers": [
+        "&quot;Idiot, I won&#039;t let you kill me!&quot;",
+        "&quot;Nothing.&quot;",
+        "&quot;Goddammit, Shinji.&quot;"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "What name is the main character Chihiro given in the 2001 movie &quot;Spirited Away&quot;?",
+      "correct_answer": "Sen (Thousand)",
+      "incorrect_answers": [
+        "Hyaku (Hundred)",
+        "Ichiman (Ten thousand)",
+        "Juu (Ten)"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "What is the name of the main character of the anime &quot;One-Punch Man&quot;?",
+      "correct_answer": "Saitama",
+      "incorrect_answers": ["Genos", "Sonic", "King"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "In the anime &quot;My Hero Academia&quot;, which character is shown with the ability to manipulate gravity?",
+      "correct_answer": "Uraraka",
+      "incorrect_answers": ["Bakugo", "Deku", "Asui "]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "Which person from &quot;JoJo&#039;s Bizarre Adventure&quot; does NOT house a reference to a band, artist, or song earlier than 1980?",
+      "correct_answer": "Giorno Giovanna",
+      "incorrect_answers": [
+        "Josuke Higashikata",
+        "Jolyne Cujoh",
+        "Johnny Joestar"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "In &quot;Highschool DxD&quot;, what is the name of the item some humans are born with?",
+      "correct_answer": "Sacred Gear",
+      "incorrect_answers": [
+        "Imperial Arm",
+        "Hallowed Relic",
+        "Blessed Artifact"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "Which Pok&eacute;mon and it&#039;s evolutions were banned from appearing in a main role after the Episode 38 Incident?",
+      "correct_answer": "The Porygon Line",
+      "incorrect_answers": [
+        "The Pikachu Line",
+        "The Elekid Line",
+        "The Magby Line"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "In the &quot;Toaru Majutsu no Index&quot; anime, Touma Kamijou is a level 0 esper that has the ability to do what?",
+      "correct_answer": "Dispell any esper or magical powers",
+      "incorrect_answers": [
+        "Teleport",
+        "Make telepathic communications",
+        "Create electricity from his own body"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "What is the name of Funny Valentine&#039;s stand in Jojo&#039;s Bizarre Adventure Part 7, Steel Ball Run?",
+      "correct_answer": "Dirty Deeds Done Dirt Cheap",
+      "incorrect_answers": [
+        "Filthy Acts Done For A Reasonable Price",
+        "Civil War",
+        "God Bless The USA"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "In the &quot;Re:Zero&quot; manga series, which of the following Sin Archbishops eats Rem&#039;s existence?",
+      "correct_answer": "Ley Batenkaitos",
+      "incorrect_answers": [
+        "Roy Alphard",
+        "Petelgeuse Romanee-Conti",
+        "Louis Arneb"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "In &quot;One Piece&quot;, which one of the following is NOT an Ancient Weapon?",
+      "correct_answer": "Jupiter",
+      "incorrect_answers": ["Uranus", "Poseidon", "Pluton"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "What caused the titular mascot of Yo-Kai Watch, Jibanyan, to become a yokai?",
+      "correct_answer": "Being run over by a truck",
+      "incorrect_answers": [
+        "Ate one too many chocobars",
+        "Through a magical ritual",
+        "When he put on the harmaki"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "What is the name of Ryūko Matoi&#039;s theme song in the anime Kill la Kill?",
+      "correct_answer": "Before My Body Is Dry",
+      "incorrect_answers": [
+        "Don&#039;t Lose Your Way",
+        "Till I Die",
+        "Suck Your Blood"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "Krusty is the guild master of which guild in &quot;Log Horizon&quot;?",
+      "correct_answer": "D. D. D",
+      "incorrect_answers": [
+        "Silver Sword",
+        "West Wind Brigade",
+        "Oceanic Systems (Marine Agency)"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "Who was a voice actor for the English dubbing of HOWL&#039;S MOVING CASTLE (2004)?",
+      "correct_answer": "Christian Bale",
+      "incorrect_answers": [
+        "Matt Damon",
+        "Joseph Gordon-Levitt",
+        "Willem Dafoe"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "In &quot;Highschool DxD&quot;, Koneko Toujou is from what race?",
+      "correct_answer": "Nekomata",
+      "incorrect_answers": ["Kitsune", "Human", "Kappa"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "How many &quot;JoJos&quot; that are protagonists are there in the series &quot;Jojo&#039;s Bizarre Adventure&quot;?",
+      "correct_answer": "8+",
+      "incorrect_answers": ["6+", "4+", "5+"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "In Pok&eacute;mon Chronicles, why was Misty afraid of Gyarados?",
+      "correct_answer": "She crawled into it&#039;s mouth as a baby.",
+      "incorrect_answers": [
+        "She found it scary.",
+        "She was badly injured from it.",
+        "It is part Bug."
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "In &quot;Hunter x Hunter&quot;, what are members in Killua&#039;s family known for being?",
+      "correct_answer": "Assassins",
+      "incorrect_answers": ["Bandits", "Hunters", "Ninjas"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "Which part from the JoJo&#039;s Bizarre Adventure manga is about a horse race across America?",
+      "correct_answer": "Part 7: Steel Ball Run",
+      "incorrect_answers": [
+        "Part 6: Stone Ocean",
+        "Part 3: Stardust Crusaders",
+        "Part 5: Golden Wind"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "Who was given the title &quot;Full Metal&quot; in the anime series &quot;Full Metal Alchemist&quot;?",
+      "correct_answer": "Edward Elric",
+      "incorrect_answers": ["Alphonse Elric", "Van Hohenheim", "Izumi Curtis"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "What colour hair does the main character of the Yu-Gi-Oh! original anime series have?",
+      "correct_answer": "Red, black and yellow",
+      "incorrect_answers": [
+        "Red, yellow and green",
+        "Red, black and green",
+        "Red, purple and blue"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "Who is One Punch Man voiced by in the Japanese version.",
+      "correct_answer": "Makoto Furukawa",
+      "incorrect_answers": ["Zach Aguilar", "Kaito Ishikawa", "Max Mittelman "]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "In the &quot;Dragon Ball&quot; franchise, what is the name of Goku&#039;s brother?",
+      "correct_answer": "Raditz",
+      "incorrect_answers": ["Gohan", "Vegeta", "Bardock"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "What is the name of the final villain in the manga series &quot;Bleach&quot;?",
+      "correct_answer": "Yhwach",
+      "incorrect_answers": ["Juha Bach", "Yuhabah", "Juhabach"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "When was the first episode of Soul Eater released?",
+      "correct_answer": "2008",
+      "incorrect_answers": ["2003", "2005", "2011"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "Which studio animated Soul Eater?",
+      "correct_answer": "Bones",
+      "incorrect_answers": ["Kyoto Animation", "xebec", "Production I.G"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "What was studio Trigger&#039;s first original long-form animated series for television?",
+      "correct_answer": "Kill la Kill",
+      "incorrect_answers": ["Kiznaiver", "Inferno Cop", "Gurren Lagann"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "What animation studio produced &quot;Gurren Lagann&quot;?",
+      "correct_answer": "Gainax",
+      "incorrect_answers": ["Kyoto Animation", "Pierrot", "A-1 Pictures"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "In &quot;To Love-Ru: Darkness&quot;, which of the girls attempt making a harem for Rito Yuuki?",
+      "correct_answer": "Momo Deviluke",
+      "incorrect_answers": [
+        "Yami (Golden Darkness)",
+        "Haruna Sairenji",
+        "Mea Kurosaki"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "In &quot;Hunter x Hunter&quot;, which of the following is NOT a type of Nen aura?",
+      "correct_answer": "Restoration",
+      "incorrect_answers": ["Emission", "Transmutation", "Specialization"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "What sport is being played in the Anime Eyeshield 21?",
+      "correct_answer": "American Football",
+      "incorrect_answers": ["Baseball", "Football", "Basketball"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "Which studio made Cowboy Bebop?",
+      "correct_answer": "Sunrise",
+      "incorrect_answers": ["Bones", "Madhouse", "Pierriot"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "In &quot;Shakugan no Shana&quot; what was the Shana usually referred as?",
+      "correct_answer": "Flame-Haired Burning-Eyed Hunter",
+      "incorrect_answers": [
+        "Flame Haze",
+        "Flame-Haired Burning-Eyed Haze",
+        "Shana"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "In the anime Noragami who is one of the main protagonists?",
+      "correct_answer": "Yukine",
+      "incorrect_answers": ["Karuha", "Mineha", "Mayu"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "What song plays in the ending credits of the anime &quot;Ergo Proxy&quot;?",
+      "correct_answer": "Paranoid Android",
+      "incorrect_answers": [
+        "Sadistic Summer",
+        "Bittersweet Symphony",
+        "Mad World"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "In &quot;JoJo&#039;s Bizarre Adventure&quot;, which of the following Stands does NOT have a time-based ability?",
+      "correct_answer": "20th Century Boy",
+      "incorrect_answers": ["Made in Heaven", "Star Platinum", "The World"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "In &quot;To Love-Ru&quot;, who is the first to hear of Yami&#039;s past from her?",
+      "correct_answer": "Rito",
+      "incorrect_answers": ["Mikan", "Lala", "Haruna"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "Who is the horror manga artist who made Uzumaki?",
+      "correct_answer": "Junji Ito",
+      "incorrect_answers": ["Kazuo Umezu", "Shintaro Kago", "Sui Ishida"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "Which Japanese music group was formed to produce theme music for the anime &quot;Guilty Crown&quot;?",
+      "correct_answer": "Egoist",
+      "incorrect_answers": ["Goose house", "Babymetal", "Garnidelia"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Politics",
+      "question": "What are the first names of the first father and son pair that were both Prime Ministers of Canada?",
+      "correct_answer": "Justin and Pierre",
+      "incorrect_answers": [
+        "John and Louis",
+        "Brian and Justin",
+        "Brian and Pierre"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Politics",
+      "question": "Which president erased the national debt of the United States?",
+      "correct_answer": "Andrew Jackson",
+      "incorrect_answers": [
+        "Ronald Reagan",
+        "John F. Kennedy",
+        "Franklin Roosevelt"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Politics",
+      "question": "Which former US president was nicknamed &quot;Teddy&quot; after he refused to shoot a defenseless black bear?",
+      "correct_answer": "Theodore Roosevelt",
+      "incorrect_answers": [
+        "Woodrow Wilson",
+        "James F. Fielder",
+        "Andrew Jackson"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Politics",
+      "question": "What country saw a world record 315 million voters turn out for elections on May 20, 1991?",
+      "correct_answer": "India",
+      "incorrect_answers": [
+        "United States of America",
+        "Soviet Union",
+        "Poland"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Politics",
+      "question": "Which of the following Pacific Islander countries is ruled by a constitutional monarchy?",
+      "correct_answer": "Tonga",
+      "incorrect_answers": ["Palau", "Fiji", "Kiribati"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Politics",
+      "question": "In June 2017, Saudi Arabia and Egypt broke off ties with which country over its supposed support for terrorism?",
+      "correct_answer": "Qatar",
+      "incorrect_answers": ["Bahrain", "United States of America", "Russia"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Politics",
+      "question": "Whose 2016 presidential campaign slogan was &quot;Make America Great Again&quot;?",
+      "correct_answer": "Donald Trump",
+      "incorrect_answers": ["Ted Cruz", "Marco Rubio", "Bernie Sanders"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Politics",
+      "question": "Who succeeded Joseph Stalin as General Secretary of the Communist Party of the Soviet Union?",
+      "correct_answer": "Nikita Khrushchev",
+      "incorrect_answers": [
+        "Leonid Brezhnev",
+        "Mikhail Gorbachev",
+        "Boris Yeltsin"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Politics",
+      "question": "What is centralism?",
+      "correct_answer": " Concentration of power and authority in a central organization.",
+      "incorrect_answers": [
+        "Conforming to one single common political agenda.",
+        "Remaining politically neutral.",
+        "The grey area in the spectrum of political left and right."
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Politics",
+      "question": "Between 1973 to 1990, what country was ruled by dictator Augusto Pinochet?",
+      "correct_answer": "Chile",
+      "incorrect_answers": ["Ethiopia", "Indonesia", "Nicaragua"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Politics",
+      "question": "Which Native American tribe/nation requires at least one half blood quantum (equivalent to one parent) to be eligible for membership?",
+      "correct_answer": "Yomba Shoshone Tribe",
+      "incorrect_answers": [
+        "Standing Rock Sioux Tribe",
+        "Kiowa Tribe of Oklahoma",
+        "Pawnee Nation of Oklahoma"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Politics",
+      "question": "Which U.S. president is said to have had the longest beard?",
+      "correct_answer": "Rutherford B. Hayes",
+      "incorrect_answers": [
+        "Zachary Taylor",
+        "John Quincy Adams",
+        "James A. Garfield"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Politics",
+      "question": "&quot;Yes, America Can!&quot; was this United States politician&#039;s de facto campaign slogan in 2004.",
+      "correct_answer": "George W. Bush",
+      "incorrect_answers": ["John Kerry", "Barack Obama", "Al Gore"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Politics",
+      "question": "Which of the following Argentinian presidents was elected in 2015?",
+      "correct_answer": "Mauricio Macri",
+      "incorrect_answers": [
+        "Cristina Fernandez de Kirchner",
+        "Nestor Kirchner",
+        "Juan Domingo Peron"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Politics",
+      "question": "Former United States President Bill Clinton famously played which instrument?",
+      "correct_answer": "Saxophone",
+      "incorrect_answers": ["Baritone horn", "Piano", "Violin"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Politics",
+      "question": "Due to the Nagoya Resolution, China agreed to allow Taiwan to compete separately in international sporting events under what name?",
+      "correct_answer": "Chinese Taipei",
+      "incorrect_answers": [
+        "Chinese Taiwan",
+        "Republic of Taiwan",
+        "Republic of Taipei "
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Politics",
+      "question": "What year did Gerald Ford Become President?",
+      "correct_answer": "1974",
+      "incorrect_answers": ["1977", "1973", "1969"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Politics",
+      "question": "Which of these is NOT one of Donald Trump&#039;s children?",
+      "correct_answer": "Julius",
+      "incorrect_answers": ["Donald Jr.", "Ivanka", "Eric"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Politics",
+      "question": "Who was the 45th President of the United States?",
+      "correct_answer": "Donald Trump",
+      "incorrect_answers": ["Barack Obama", "Bill Clinton", "George Bush"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Politics",
+      "question": "How many people are in the U.S. House of Representatives?",
+      "correct_answer": "435",
+      "incorrect_answers": ["260", "415", "50"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Politics",
+      "question": "According to the United States Constitution, how old must a person be to be elected President of the United States?",
+      "correct_answer": "35",
+      "incorrect_answers": ["30", "40", "45"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Politics",
+      "question": "Which former US president used &quot;Let&#039;s Make America Great Again&quot; as his campaign slogan before Donald Trump&#039;s campaign?",
+      "correct_answer": "Ronald Reagan",
+      "incorrect_answers": ["Jimmy Carter", "Gerald Ford", "Richard Nixon"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Politics",
+      "question": "Who became Prime Minister of the United Kingdom in July 2016?",
+      "correct_answer": "Theresa May",
+      "incorrect_answers": ["Boris Johnson", "David Cameron", "Tony Blair"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Politics",
+      "question": "Which of the following United States senators is known for performing a 24-hour long filibuster?",
+      "correct_answer": "Strom Thurmond",
+      "incorrect_answers": ["Roy Blunt", "John Barrasso", "Chuck Schumer"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Politics",
+      "question": "Which of these was an official candidate in the 2017 British General Election?",
+      "correct_answer": "Lord Buckethead",
+      "incorrect_answers": [
+        "James Francis",
+        "Robert Wimbledon",
+        "Sir Crumpetsby"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Politics",
+      "question": "Which major bank&#039;s collapse was notable as one of the causes of the Financal Crisis of 2008?",
+      "correct_answer": "Lehman Brothers",
+      "incorrect_answers": ["HSBC", "Barclays", "Lloyds"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Politics",
+      "question": "Who was the only president to not be in office in Washington D.C?",
+      "correct_answer": "George Washington",
+      "incorrect_answers": [
+        "Abraham Lincoln",
+        "Richard Nixon",
+        "Thomas Jefferson"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Politics",
+      "question": "The largest consumer market in 2015 was...",
+      "correct_answer": "The United States of America",
+      "incorrect_answers": ["Germany", "Japan", "United Kingdom"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Politics",
+      "question": "What is former United States President Bill Clinton&#039;s full name?",
+      "correct_answer": "William Jefferson Clinton",
+      "incorrect_answers": [
+        "William Roosevelt Clinton",
+        "William Truman Clinton",
+        "William Lincoln Clinton"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Politics",
+      "question": "What is the name of Niccol&ograve; Machiavelli&#039;s work that argued effective leaders needed to crush their opponents at all costs?",
+      "correct_answer": "The Prince",
+      "incorrect_answers": [
+        "The Rape of Lucrece",
+        "Will to Power",
+        "Love&#039;s Labours Lost"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Politics",
+      "question": "The 2014 movie &quot;The Raid 2: Berandal&quot; was mainly filmed in which Asian country?",
+      "correct_answer": "Indonesia",
+      "incorrect_answers": ["Thailand", "Brunei", "Malaysia"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Politics",
+      "question": "In United States history, how many vice presidents did Franklin D. Roosevelt have during his time in office as president?",
+      "correct_answer": "3",
+      "incorrect_answers": ["1", "2", "0"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Politics",
+      "question": "Which letter do you need to have on a European driver license in order to ride any motorbikes?",
+      "correct_answer": "A",
+      "incorrect_answers": ["X", "D", "B"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Politics",
+      "question": "What year did the effort to deploy the Common Core State Standards (CCSS) in the US begin?",
+      "correct_answer": "2009",
+      "incorrect_answers": ["2012", "2006", "1997"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Politics",
+      "question": "Who was the longest-serving senator in US history, serving from 1959 to 2010?",
+      "correct_answer": "Robert Byrd",
+      "incorrect_answers": ["Daniel Inouye", "Strom Thurmond", "Joe Biden"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Politics",
+      "question": "Who is the only US president to serve two non-consecutive terms in office?",
+      "correct_answer": "Grover Cleveland",
+      "incorrect_answers": [
+        "James K. Polk",
+        "Franklin D. Roosevelt",
+        "Thomas Jefferson"
+      ]
+    }
+  ]
+}

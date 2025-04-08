@@ -1,0 +1,108 @@
+name: Lint, Format, and Test Code
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Unit Tests
+        run: python -m unittest discover -s src/tests -p "test_*.py" 
+
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Black Formatter
+        run: black --line-length 88 .
+
+      - name: Check for formatting changes
+        id: check_diff
+        run: |
+          if git diff --quiet; then
+            echo "SKIP=true" >> $GITHUB_ENV
+          else
+            echo "SKIP=false" >> $GITHUB_ENV
+          fi
+
+      - name: Create and Push to a New Branch for Formatting
+        if: env.SKIP != 'true'
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          git checkout -B black-auto-format origin/main
+          black .
+          git add .
+          git diff --quiet && echo "No changes to commit" || git commit -m "Auto-format code with Black"
+          git push origin black-auto-format --force
+
+  lint:
+    runs-on: ubuntu-latest
+    needs: format
+    if: needs.format.outputs.SKIP != 'true'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Pylint Linter
+        run: pylint $(git ls-files '*.py')
+
+  create-pr:
+    runs-on: ubuntu-latest
+    needs: lint
+    if: needs.format.outputs.SKIP != 'true'
+    steps:
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          title: "Auto-format code with Black"
+          body: "This PR contains automatic formatting changes made by Black."
+          branch: black-auto-format
+          base: main
+          delete-branch: false
+          labels: "auto-format"
+          draft: false
