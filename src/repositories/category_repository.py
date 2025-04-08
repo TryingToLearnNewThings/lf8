@@ -6,7 +6,7 @@ class CatecoryRepository(DatabaseHelper):
         return self.get_value_from_table(
             "Category", "categoryID", "categoryName", categoryName
         )
-    
+
     def create_category(self, categoryName):
         self.cursor.execute(
             """ 
@@ -14,12 +14,12 @@ class CatecoryRepository(DatabaseHelper):
         """,
             (categoryName,),
         )
-        
+
     def get_category_name(self):
         self.cursor.execute(
             """ 
         SELECT categoryName FROM Category
-            """,)
+            """,
+        )
         rows = self.cursor.fetchall()
         return [row[0] for row in rows]
-        

@@ -1,6 +1,7 @@
 import tkinter as tk
 from repositories.player_repository import PlayerRepository
 
+
 def leaderboard_screen():
     # Initialisiere das Hauptfenster
     root = tk.Tk()

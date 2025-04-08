@@ -49,18 +49,22 @@ def create_game():
 @app.route("/get_questions/<int:game_id>", methods=["GET"])
 def get_questions(game_id):
     try:
-        questions = question_repo.get_random_questions(5) #müsste das hier nicht die Variable Game_id sein?
+        questions = question_repo.get_random_questions(
+            5
+        )  # müsste das hier nicht die Variable Game_id sein?
         if not questions:
             return jsonify({"error": "Not enough questions available"}), 400
 
-        question_repo.assign_questions_to_game(game_id, questions) # woher kommt die Funktion? Meint ihr fill_game_question?
+        question_repo.assign_questions_to_game(
+            game_id, questions
+        )  # woher kommt die Funktion? Meint ihr fill_game_question?
         return jsonify({"questions": questions}), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
 
 @app.route("/submit_answer", methods=["POST"])
-def submit_answer(): # wie funktioniert das hier genau mit data.get?
+def submit_answer():  # wie funktioniert das hier genau mit data.get?
     data = request.json
     player_id = data.get("playerID")
     question_id = data.get("questionID")
@@ -68,10 +72,14 @@ def submit_answer(): # wie funktioniert das hier genau mit data.get?
     answer = data.get("answer")
 
     try:
-        is_correct = question_repo.check_answer(question_id, answer) # ist damit get_correct_answer gemeint? zudem muss neuerdings keine questionID mehr übergeben werden
+        is_correct = question_repo.check_answer(
+            question_id, answer
+        )  # ist damit get_correct_answer gemeint? zudem muss neuerdings keine questionID mehr übergeben werden
         if is_correct:
             player_repo.increment_score(player_id)
-            question_repo.mark_question_as_played(game_id, question_id)# diese Funktion gibt es auch nicht, ist question_played (gab es bis eben nicht)?
+            question_repo.mark_question_as_played(
+                game_id, question_id
+            )  # diese Funktion gibt es auch nicht, ist question_played (gab es bis eben nicht)?
             return jsonify({"correct": True}), 200
 
         return jsonify({"correct": False}), 200

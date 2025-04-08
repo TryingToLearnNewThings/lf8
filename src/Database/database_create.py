@@ -4,7 +4,7 @@ import os
 
 # Füge den Hauptordner zum Python-Suchpfad hinzu
 # Verbindung zur SQLite-Datenbank
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 con = sqlite3.connect("Database/database.db")
 cursor = con.cursor()
 

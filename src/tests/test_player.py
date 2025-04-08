@@ -2,7 +2,8 @@ import unittest
 import os
 import sys
 import sqlite3
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from repositories.player_repository import PlayerRepository
 
 
@@ -32,10 +33,10 @@ class TestPlayerRepository(unittest.TestCase):
 
         # Repository nutzt jetzt die in-memory DB über die Verbindung
         self.player = PlayerRepository(connection=self.conn)
-        
+
         self.cursor.execute(
             "INSERT INTO Player(playerPassword, playerName, playerScore, playerWins, playedGames, correctHardQuestions, correctMediumQuestions, correctEasyQuestions) VALUES (?, ?, ?, ?, ?, ?, ?,?)",
-            (12345, "Marsl", 1000, 10, 10, 100, 20, 30)
+            (12345, "Marsl", 1000, 10, 10, 100, 20, 30),
         )
         self.conn.commit()
 
@@ -64,7 +65,7 @@ class TestPlayerRepository(unittest.TestCase):
 
         # when
         self.player.update_fieldValue(
-            "Player", "playerName", newValue,playerID , "playerID"
+            "Player", "playerName", newValue, playerID, "playerID"
         )
 
         self.cursor.execute(

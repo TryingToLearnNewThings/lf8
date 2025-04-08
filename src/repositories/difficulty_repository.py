@@ -4,9 +4,11 @@ from repositories.database_helper import DatabaseHelper
 
 class DifficultyRepository(DatabaseHelper):
     def __init__(self, connection=None):
-        super().__init__(connection=connection)  # Initialisiert die Verbindung über die Basisklasse
+        super().__init__(
+            connection=connection
+        )  # Initialisiert die Verbindung über die Basisklasse
         self.question_id = None
-    
+
     def get_difficultyId_from_questionId(self, questionID):
         return self.get_value_from_table(
             "Question", "difficultyID", "questionID", questionID
@@ -31,8 +33,7 @@ class DifficultyRepository(DatabaseHelper):
         difficulties = self.cursor.fetchall()
         print(difficulties)
         return [difficulties[0] for difficulties in difficulties]
-    
-    
+
     def update_points(self, newPoints, difficultyID):
         self.cursor.execute(
             """ 

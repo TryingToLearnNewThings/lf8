@@ -28,10 +28,12 @@ d.get_difficulty_points(difficultyid)
 d.get_all_difficulties()
 
 a = AchievmentRepository()
-a.create_new_achievments("correctEasyQuestions 20 or higher","correctEasyQuestions",20)
+a.create_new_achievments(
+    "correctEasyQuestions 20 or higher", "correctEasyQuestions", 20
+)
 requierments = a.get_requierments(1)
 achievementName = a.get_achievment_name(1)
-achievmentsInfos=a.get_all_achievements()
+achievmentsInfos = a.get_all_achievements()
 pr = PlayerRepository()
 p = Player(
     player_id=1,
@@ -45,14 +47,13 @@ p = Player(
 pr.get_playerID_by_name("Leon")
 player_achievements = pr.get_all_player_achievements()
 print(player_achievements)
-check_achievment = p.receive_achievement(achievmentsInfos[0],achievmentsInfos[1], achievmentsInfos[2], player_achievements)
+check_achievment = p.receive_achievement(
+    achievmentsInfos[0], achievmentsInfos[1], achievmentsInfos[2], player_achievements
+)
 
 if check_achievment:
-    a.fill_player_to_achievments(
-        p.player_id, check_achievment
-    )
+    a.fill_player_to_achievments(p.player_id, check_achievment)
 print(pr.get_player_achievments())
 
 # new_value_correctanswer = pr.get_correct_Questions_by_difficulty("medium")
 a.get_all_achievements()
-
