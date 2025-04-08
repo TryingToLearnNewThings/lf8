@@ -71,12 +71,15 @@ def entry_screen():
         relief="flat",
         command=helper_screen,  # Open the helper screen
     )
-    help_button.place(relx=1.0, rely=1.0, anchor="se", x=-20, y=-20)  # Bottom-right corner with padding
+    help_button.place(
+        relx=1.0, rely=1.0, anchor="se", x=-20, y=-20
+    )  # Bottom-right corner with padding
 
     # Bind the "h" key to open the helper screen
     main_screen.bind("h", lambda event: helper_screen())
 
     main_screen.mainloop()
+
 
 # Schhließt Entry-screen und öffnet Achievement-screen
 def open_achievement_screen():

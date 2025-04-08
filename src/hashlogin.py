@@ -62,9 +62,7 @@ def login_screen(start_game_callback):
 
     # NEU: Frame zum vollständigen Zentrieren
     frame = tk.Frame(root, bg="#1e1e1e")
-    frame.place(
-        relx=0.5, rely=0.5, anchor="center"
-    )
+    frame.place(relx=0.5, rely=0.5, anchor="center")
 
     # Benutzername
     tk.Label(

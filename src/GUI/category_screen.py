@@ -5,7 +5,9 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 import tkinter as tk
-from selection_screen import (mode_screen,)
+from selection_screen import (
+    mode_screen,
+)
 from repositories.category_repository import CatecoryRepository
 
 
@@ -13,7 +15,7 @@ category_repo = CatecoryRepository()
 
 
 def category_screen():
-    
+
     root = tk.Tk()
     root.title("Wähle die Kategorie")
     root.geometry("1200x800")
@@ -58,14 +60,13 @@ def category_screen():
 
 def open_mode_screen(root, selected_category):
     print(f"Ausgewählte Kategorie: {selected_category}")
-    
+
     # Hier kannst du z. B. die Kategorie-ID ermitteln oder weitermachen
     categoryID = category_repo.get_category_id_by_name(selected_category)
     print(categoryID)
     """
     Öffnet den Modus-Bildschirm und schließt den Kategorie-Bildschirm.
     """
-    
+
     root.destroy()  # Schließt den Kategorie-Bildschirm
     mode_screen()
-
