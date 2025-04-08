@@ -6,7 +6,16 @@ cursor = con.cursor()
 
 class Player:
 
-    def __init__(self,name: str,player_id: int,player_password,score,correctHardQuestions,correctMediumQuestions,correctEasyQuestions,):
+    def __init__(
+        self,
+        name: str,
+        player_id: int,
+        player_password,
+        score,
+        correctHardQuestions,
+        correctMediumQuestions,
+        correctEasyQuestions,
+    ):
         self.name = name
         self.player_id = player_id
         self.password = player_password
@@ -38,7 +47,9 @@ class Player:
         }
 
         # Durch alle Anforderungen und zugehörigen IDs gehen
-        for achievement_id, attribute_name, required_value in zip(achievementIDs, requirements_fields, required_values):
+        for achievement_id, attribute_name, required_value in zip(
+            achievementIDs, requirements_fields, required_values
+        ):
 
             # Prüfen, ob dieses Achievement bereits vorhanden ist
             if achievement_id in already_recieved_ids:
