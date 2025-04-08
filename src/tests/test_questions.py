@@ -7,8 +7,6 @@ import unittest
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from repositories.question_repository import QuestionRepository
 
-#sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
 
 class TestQuestionsRepository(unittest.TestCase):
     def setUp(self):
