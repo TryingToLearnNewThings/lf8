@@ -11,6 +11,7 @@ on:
 jobs:
   tests:
     runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' || github.event_name == 'push'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -30,6 +31,8 @@ jobs:
 
   format:
     runs-on: ubuntu-latest
+    needs: tests
+    if: github.event_name == 'push'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -85,7 +88,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     needs: format
-    if: needs.format.outputs.SKIP != 'true'
+    if: github.event_name == 'push' && needs.format.outputs.SKIP != 'true'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
