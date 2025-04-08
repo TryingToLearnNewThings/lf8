@@ -29,10 +29,7 @@ class TestDifficultiesRepository(unittest.TestCase):
         self.difficulties = DifficultyRepository(connection=self.conn)
 
         # Add sample difficulty
-        self.cursor.execute(
-            "INSERT INTO Difficulty (difficultyName, difficultyPoints) VALUES (?, ?)",
-            ("Easy", 100),
-        )
+        self.cursor.execute("INSERT INTO Difficulty (difficultyName, difficultyPoints) VALUES (?, ?)",("Easy", 100),)
         self.conn.commit()
 
     def test_update_points(self):
@@ -44,10 +41,7 @@ class TestDifficultiesRepository(unittest.TestCase):
         self.difficulties.update_points(new_points, difficultyID)
 
         # then
-        self.cursor.execute(
-            "SELECT difficultyPoints FROM Difficulty WHERE difficultyID = ?",
-            (difficultyID,),
-        )
+        self.cursor.execute("SELECT difficultyPoints FROM Difficulty WHERE difficultyID = ?",(difficultyID,),)
         result = self.cursor.fetchone()
         self.assertIsNotNone(result)
         self.assertEqual(result[0], new_points)

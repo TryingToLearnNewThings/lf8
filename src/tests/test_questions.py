@@ -36,18 +36,7 @@ class TestQuestionsRepository(unittest.TestCase):
         self.questions = QuestionRepository(connection=self.conn)
 
         # Füge eine Beispiel-Frage hinzu, die in den Tests verwendet wird
-        self.cursor.execute(
-            "INSERT INTO Question (categoryID, difficultyID, question, correctAnswer, incorrectAnswers1, incorrectAnswers2, incorrectAnswers3) VALUES (?, ?, ?, ?, ?, ?, ?)",
-            (
-                1,
-                1,
-                "Was ist die Hauptstadt von Frankreich?",
-                "Paris",
-                "Berlin",
-                "Madrid",
-                "Rom",
-            ),
-        )
+        self.cursor.execute("INSERT INTO Question (categoryID, difficultyID, question, correctAnswer, incorrectAnswers1, incorrectAnswers2, incorrectAnswers3) VALUES (?, ?, ?, ?, ?, ?, ?)",(1,1,"Was ist die Hauptstadt von Frankreich?","Paris","Berlin","Madrid","Rom",),)
         self.conn.commit()
 
     def test_create_question(self):
@@ -78,9 +67,7 @@ class TestQuestionsRepository(unittest.TestCase):
         questionID = 1
         # when
         self.questions.update_question(questionID, field, newData)
-        self.cursor.execute(
-            "SELECT question FROM Question WHERE questionID = ?", (questionID,)
-        )
+        self.cursor.execute("SELECT question FROM Question WHERE questionID = ?", (questionID,))
         result = self.cursor.fetchone()
         # then
         self.assertIsNotNone(result)  # Prüfen, ob die Frage existiert
