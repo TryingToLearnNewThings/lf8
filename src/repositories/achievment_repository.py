@@ -4,16 +4,10 @@ from repositories.database_helper import DatabaseHelper
 class AchievmentRepository(DatabaseHelper):
     # kein Init, da die AchievementsID wechseln kann. Dadurch entfällt der nutzen
     def get_achievment_name(self, achievementID):
-        return self.get_value_from_table(
-            "Achievement", "achievementName", "achievementID", achievementID
-        )
+        return self.get_value_from_table("Achievement", "achievementName", "achievementID", achievementID)
 
     # Verbindet den Player zu seinen Achievements
-    def fill_player_to_achievments(
-        self,
-        playerID,
-        achievementID,
-    ):
+    def fill_player_to_achievments(self,playerID,achievementID,):
         for i in achievementID:
             self.cursor.execute(
                 """INSERT INTO PlayerToAchievement(playerID,achievementID) VALUES (?,?) """,
@@ -41,8 +35,4 @@ class AchievmentRepository(DatabaseHelper):
     def get_all_achievements(self):
         self.cursor.execute(""" SELECT * FROM Achievement""")
         rows = self.cursor.fetchall()
-        return (
-            ([row[0] for row in rows]),
-            ([row[2] for row in rows]),
-            ([row[3] for row in rows]),
-        )
+        return (([row[0] for row in rows]),([row[2] for row in rows]),([row[3] for row in rows]),)
