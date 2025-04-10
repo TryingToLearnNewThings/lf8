@@ -3,9 +3,8 @@ import sys
 import sqlite3
 import unittest
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from repositories.difficulty_repository import DifficultyRepository
-
 
 class TestDifficultiesRepository(unittest.TestCase):
     def setUp(self):
@@ -14,15 +13,13 @@ class TestDifficultiesRepository(unittest.TestCase):
         self.cursor = self.conn.cursor()
 
         # Creates the required tables
-        self.cursor.execute(
-            """
+        self.cursor.execute("""
             CREATE TABLE IF NOT EXISTS Difficulty (
                 difficultyID INTEGER PRIMARY KEY AUTOINCREMENT,
                 difficultyName TEXT UNIQUE NOT NULL,
                 difficultyPoints INTEGER NOT NULL
             );
-        """
-        )
+        """)
         self.conn.commit()
 
         # Initialize repository with test connection
@@ -31,34 +28,31 @@ class TestDifficultiesRepository(unittest.TestCase):
         # Add sample difficulty
         self.cursor.execute(
             "INSERT INTO Difficulty (difficultyName, difficultyPoints) VALUES (?, ?)",
-            ("Easy", 100),
+            ("Easy", 100)
         )
         self.conn.commit()
 
     def test_update_points(self):
         # given
-        difficultyID = 1
+        difficulty_id = 1
         new_points = 200
 
         # when
-        self.difficulties.update_points(new_points, difficultyID)
-
+        self.difficulties.Update_points(new_points, difficulty_id)
+        
         # then
-        self.cursor.execute(
-            "SELECT difficultyPoints FROM Difficulty WHERE difficultyID = ?",
-            (difficultyID,),
-        )
+        self.cursor.execute("SELECT difficultyPoints FROM Difficulty WHERE difficultyID = ?", (difficulty_id,))
         result = self.cursor.fetchone()
         self.assertIsNotNone(result)
         self.assertEqual(result[0], new_points)
 
     def test_get_difficulty_points(self):
         # given
-        difficultyID = 1
+        difficulty_id = 1
         expected_points = 100
 
         # when
-        points = self.difficulties.get_difficulty_points(difficultyID)
+        points = self.difficulties.get_difficulty_infos("difficultyPoints","difficultyID",difficulty_id)
 
         # then
         self.assertEqual(points, expected_points)
@@ -67,12 +61,12 @@ class TestDifficultiesRepository(unittest.TestCase):
         # given
         self.cursor.execute(
             "INSERT INTO Difficulty (difficultyName, difficultyPoints) VALUES (?, ?)",
-            ("Medium", 200),
+            ("Medium", 200)
         )
         self.conn.commit()
 
         # when
-        difficulties = self.difficulties.get_all_difficulties()
+        difficulties = self.difficulties.Get_all_difficulties()
         self.cursor.execute("SELECT difficultyName FROM Difficulty")
         result = self.cursor.fetchall()
         result = [row[0] for row in result]
@@ -81,12 +75,11 @@ class TestDifficultiesRepository(unittest.TestCase):
         self.assertIsNotNone(result)
         self.assertEqual(result, expected_difficulties)
 
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     suite = unittest.TestSuite()
     suite.addTest(TestDifficultiesRepository("test_update_points"))
     suite.addTest(TestDifficultiesRepository("test_get_difficulty_points"))
     suite.addTest(TestDifficultiesRepository("test_get_all_difficulties"))
-
+    
     runner = unittest.TextTestRunner()
     runner.run(suite)

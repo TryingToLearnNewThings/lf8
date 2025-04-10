@@ -1,15 +1,14 @@
 import tkinter as tk
 from repositories.player_repository import PlayerRepository
 
-
-def achievement_screen():
-    # Initialisiere das Hauptfenster
+def achievementScreen(player_repo):
+    # Initialises the main window
     root = tk.Tk()
     root.title("Achievements")
     root.geometry("800x600")
     root.configure(bg="#2e2e2e")
 
-    # Überschrift
+    # Headline
     tk.Label(
         root,
         text="Achievements",
@@ -18,11 +17,11 @@ def achievement_screen():
         bg="#2e2e2e",
     ).pack(pady=20)
 
-    # Tabelle für Achievements
+    # Table of achievements
     achievement_frame = tk.Frame(root, bg="#2e2e2e")
     achievement_frame.pack(pady=20)
 
-    # Spaltenüberschriften
+    # Column headings
     tk.Label(
         achievement_frame,
         text="Achievement",
@@ -40,12 +39,10 @@ def achievement_screen():
         width=15,
     ).grid(row=0, column=1)
 
-    # Spieler-Daten aus der Datenbank abrufen
-    player_repo = PlayerRepository()
-    player_id = 1  # Beispiel: Ersetze dies durch die tatsächliche Spieler-ID
-    achievements = player_repo.get_all_player_achievements(player_id)
+    # Retrieves player data from the database
+    achievements = player_repo.Achievment_player_info()
 
-    # Achievements in der Tabelle anzeigen
+    # Shows achievements in the table
     for index, achievement in enumerate(achievements):
         tk.Label(
             achievement_frame,
@@ -55,7 +52,7 @@ def achievement_screen():
             bg="#2e2e2e",
             width=30,
         ).grid(row=index + 1, column=0)
-        status = "Erreicht" if achievement["achieved"] else "Nicht erreicht"
+        status = "Achieved" if achievement["achieved"] else "Not Achieved"
         tk.Label(
             achievement_frame,
             text=status,
@@ -65,10 +62,10 @@ def achievement_screen():
             width=15,
         ).grid(row=index + 1, column=1)
 
-    # Button zum Hauptmenü
+    # Button to main menu
     tk.Button(
         root,
-        text="Zurück zum Hauptmenü",
+        text="Back to Main Menu",
         font=("Helvetica", 14, "bold"),
         bg="#444444",
         fg="#DDDDDD",

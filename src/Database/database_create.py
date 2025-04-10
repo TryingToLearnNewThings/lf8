@@ -2,14 +2,14 @@ import sqlite3
 import sys
 import os
 
-# Füge den Hauptordner zum Python-Suchpfad hinzu
-# Verbindung zur SQLite-Datenbank
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+# Add the main folder to the Python search path
+# Connection to the SQLite database
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 con = sqlite3.connect("Database/database.db")
 cursor = con.cursor()
 
 
-# Benötigte Tabellen erstellen
+# Create required tables
 cursor.execute(
     """
 CREATE TABLE IF NOT EXISTS Category (
@@ -52,42 +52,9 @@ CREATE TABLE IF NOT EXISTS Player (
     playerPassword TEXT,
     playerName TEXT UNIQUE,
     playerScore INTEGER,
-    playedGames INTEGER,
     correctHardQuestions INTEGER,
     correctMediumQuestions INTEGER,
     correctEasyQuestions INTEGER
-);
-"""
-)
-
-cursor.execute(
-    """
-CREATE TABLE IF NOT EXISTS Game (
-    gameID INTEGER PRIMARY KEY AUTOINCREMENT,
-    gameDate DATE,
-    gameKey TEXT
-);
-"""
-)
-
-cursor.execute(
-    """
-CREATE TABLE IF NOT EXISTS PlayerOfGame (
-    gameID INTEGER,
-    playerID INTEGER,
-    FOREIGN KEY (playerID) REFERENCES Player(playerID),
-    FOREIGN KEY (gameID) REFERENCES Game(gameID)
-);
-"""
-)
-cursor.execute(
-    """
-CREATE TABLE IF NOT EXISTS GameQuestion (
-    gameID INTEGER,
-    questionID INTEGER,
-    played INTEGER,
-    FOREIGN KEY (questionID) REFERENCES Question(questionID),
-    FOREIGN KEY (gameID) REFERENCES Game(gameID)
 );
 """
 )
@@ -114,20 +81,6 @@ CREATE TABLE IF NOT EXISTS PlayerToAchievement (
 """
 )
 
-cursor.execute(
-    """
-CREATE TABLE IF NOT EXISTS RightOrWrong (
-    playerID INTEGER,
-    questionID INTEGER,
-    gameID INTEGER,
-    answerCorrectly INTEGER,
-    FOREIGN KEY (playerID) REFERENCES Player(playerID),
-    FOREIGN KEY (questionID) REFERENCES Question(questionID),
-    FOREIGN KEY (gameID) REFERENCES Game(gameID)
-);
-"""
-)
-
-# Änderungen speichern und Verbindung schließen
+# Save changes and close connection
 con.commit()
 con.close()

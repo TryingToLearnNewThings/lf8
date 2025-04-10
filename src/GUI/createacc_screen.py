@@ -1,72 +1,71 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
+from repositories.player_repository import PlayerRepository
 import sqlite3
-from login_screen import login_screen
+# from GUI.login_screen import Login
+player_repo = PlayerRepository()
 
-
-def create_account_screen():
-    def create_account():
+def createAccountScreen():
+    
+    def createAccount():
         username = entry_username.get()
         password = entry_password.get()
         confirm_password = entry_confirm_password.get()
 
         if not username or not password or not confirm_password:
-            messagebox.showerror("Fehler", "Alle Felder müssen ausgefüllt werden.")
+            messagebox.showerror("Error", "All Inputs need to be filled")
             return
 
         if password != confirm_password:
-            messagebox.showerror("Fehler", "Passwörter stimmen nicht überein.")
+            messagebox.showerror("Error", "Passwords do not match")
             return
 
-        # Datenbankverbindung für die Erstellung eines neuen Accounts
-        con = sqlite3.connect("./Database/database.db")
-        cursor = con.cursor()
+        player_name_taken =player_repo.Get_value_from_table("Player","*","playerName", username)
+        
+        # Database connection for the creation of a new account
+        # con = sqlite3.connect("./Database/database.db")
+        # cursor = con.cursor()
 
-        cursor.execute("SELECT * FROM Player WHERE Playername = ?", (username,))
-        if cursor.fetchone():
-            messagebox.showerror("Fehler", "Benutzername ist bereits vergeben.")
-            con.close()
+        # cursor.execute("SELECT * FROM Player WHERE Playername = ?", (username,))
+        if player_name_taken:
+            messagebox.showerror("Error", "Username is already taken")
             return
 
-        cursor.execute(
-            "INSERT INTO Player (Playername, playerPassword) VALUES (?, ?)",
-            (username, password),
-        )
-        con.commit()
-        con.close()
+        player_repo.create_user(username,password)
 
-        messagebox.showinfo("Erfolg", "Account erfolgreich erstellt!")
+        messagebox.showinfo("Success", "Account created successfully")
         createacc_window.destroy()
-        login_screen()
+
+
 
     createacc_window = tk.Tk()
-    createacc_window.title("Account erstellen")
+    createacc_window.title("Create Account")
     createacc_window.geometry("1200x800")
-    createacc_window.configure(bg="#2e2e2e")  # Standard-Hintergrundfarbe
+    createacc_window.configure(bg="#2e2e2e")
 
-    # Schriftarten und Farben
+    # Fonts and colours
     label_font = ("Helvetica", 16, "bold")
     btn_font = ("Helvetica", 14, "bold")
-    btn_bg = "#444444"  # Dunkleres Grau für Buttons
-    btn_fg = "#DDDDDD"  # Hellgrauer Text
-    entry_bg = "#3E3E3E"  # Dunkles Grau für Eingabefelder
-    entry_fg = "#FFFFFF"  # Weißer Text
+    btn_bg = "#444444"
+    btn_fg = "#DDDDDD"
+    entry_bg = "#3E3E3E"
+    entry_fg = "#FFFFFF"
 
-    # Frame zum vollständigen Zentrieren
+    # Frame for complete centring
     frame = tk.Frame(createacc_window, bg="#2e2e2e")
     frame.place(relx=0.5, rely=0.5, anchor="center")
 
-    # Benutzername
+    # Username
     tk.Label(
-        frame, text="Benutzername:", font=label_font, fg="white", bg="#2e2e2e"
+        frame, text="Username:", font=label_font, fg="white", bg="#2e2e2e"
     ).pack(pady=5)
     entry_username = tk.Entry(
         frame, font=label_font, bg=entry_bg, fg=entry_fg, relief="flat"
     )
     entry_username.pack(pady=5)
 
-    # Passwort
-    tk.Label(frame, text="Passwort:", font=label_font, fg="white", bg="#2e2e2e").pack(
+    # Password
+    tk.Label(frame, text="Password:", font=label_font, fg="white", bg="#2e2e2e").pack(
         pady=5
     )
     entry_password = tk.Entry(
@@ -74,25 +73,27 @@ def create_account_screen():
     )
     entry_password.pack(pady=5)
 
-    # Passwort bestätigen
+    # Confirm password
     tk.Label(
-        frame, text="Passwort bestätigen:", font=label_font, fg="white", bg="#2e2e2e"
+        frame, text="Confirm Password:", font=label_font, fg="white", bg="#2e2e2e"
     ).pack(pady=5)
     entry_confirm_password = tk.Entry(
         frame, font=label_font, bg=entry_bg, fg=entry_fg, show="*", relief="flat"
     )
     entry_confirm_password.pack(pady=5)
 
-    # Account erstellen Button
+    # Create account button
     btn_create = tk.Button(
         frame,
-        text="Account erstellen",
+        text="Create Account",
         font=btn_font,
         bg=btn_bg,
         fg=btn_fg,
         relief="flat",
-        command=create_account,
+        command=createAccount,
     )
     btn_create.pack(pady=10, ipadx=20, ipady=10)
 
     createacc_window.mainloop()
+
+

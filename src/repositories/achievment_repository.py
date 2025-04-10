@@ -2,37 +2,44 @@ from repositories.database_helper import DatabaseHelper
 
 
 class AchievmentRepository(DatabaseHelper):
-    # kein Init, da die AchievementsID wechseln kann. Dadurch entfällt der nutzen
-    def get_achievment_name(self, achievementID):
-        return self.get_value_from_table("Achievement", "achievementName", "achievementID", achievementID)
-
-    # Verbindet den Player zu seinen Achievements
-    def fill_player_to_achievments(self,playerID,achievementID,):
-        for i in achievementID:
+    # no Init, as the AchievementID can change. This eliminates the benefit
+    def Get_achievment_name(self, achievement_id):
+        return self.Get_value_from_table(
+            "Achievement", "achievementName", "achievementID", achievement_id
+        )
+    
+    # Connects the player to his achievements
+    def Fill_player_to_achievments(
+        self, player_id, achievement_id,
+    ):
+        for i in achievement_id:
             self.cursor.execute(
-                """INSERT INTO PlayerToAchievement(playerID,achievementID) VALUES (?,?) """,
-                (playerID, i),
-            )
+                    """INSERT INTO PlayerToAchievement(playerID,achievementID) VALUES (?,?) """,
+                    (player_id, i),
+                )
             self.con.commit()
             print("You have achieved a new achievements")
 
-    def create_new_achievments(self, achievementName, conditionType, value):
+    def Create_new_achievments(self, achievement_name, condition_type, value):
         self.cursor.execute(
             """INSERT INTO Achievement (achievementName, conditionType, value) VALUES (?, ?,?) """,
-            (achievementName, conditionType, value),
+            (achievement_name, condition_type, value),
         )
         self.con.commit()
+        
+   
 
-    # holt die Anforderung zur erfüllung der Achievements
-    def get_requierments(self, achievementID):
-        requierments = self.get_value_from_table(
-            "Achievement", "conditionType, value", "achievementID", achievementID
+    # Gets the requirement to fulfil the Achievements
+    def Get_requierments(self, achievement_id):
+        requierments = self.Get_value_from_table(
+            "Achievement", "conditionType, value", "achievementID", achievement_id
         )
-
         print(requierments)
         return requierments
-
-    def get_all_achievements(self):
+    
+    
+    
+    def Get_all_achievements(self):
         self.cursor.execute(""" SELECT * FROM Achievement""")
         rows = self.cursor.fetchall()
-        return (([row[0] for row in rows]),([row[2] for row in rows]),([row[3] for row in rows]),)
+        return([row[0] for row in rows]),([row[2] for row in rows]),([row[3] for row in rows])

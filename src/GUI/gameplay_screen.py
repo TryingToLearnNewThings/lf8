@@ -2,49 +2,52 @@ import sys
 import os
 import random
 
-# Füge den Hauptordner `src` zum Python-Suchpfad hinzu
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+# Adds the main folder 'src' to the Python search path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import tkinter as tk
 from tkinter import messagebox
 from repositories.question_repository import QuestionRepository
-from repositories.player_repository import PlayerRepository
+from repositories.difficulty_repository import DifficultyRepository
+from player import Player
+from repositories.achievment_repository import AchievmentRepository
+from GUI.leaderboard_screen import leaderboardScreen
+
 
 
 class GameplayScreen:
-    def __init__(self, category_id):
+    def __init__(self, category_id, player_repo):
         self.category_id = category_id
         self.question_repo = QuestionRepository()
+        self.player_repo = player_repo
+        self.player_id = None
         self.current_question = None
         self.score = 0
-        self.question_ids = self.question_repo.get_random_questionID(
-            self.question_repo.get_questionIDs_with_Categorys(self.category_id)
-        )
+        self.question_id = None
+        self.not_answert = self.question_repo.Get_questionids_with_categorys(self.category_id)
+        self.time_left = 30  # Timer in seconds
 
-        self.current_question_index = 0
-        self.time_left = 10  # Timer in Sekunden
-
-        # Initialisiere das Hauptfenster
+        # Initialises the main window
         self.root = tk.Tk()
-        self.root.title("Quiz-Spiel")
-        self.root.geometry("1200x800")  # Breite x Höhe
+        self.root.title("Quiz Game")
+        self.root.geometry("1200x800")
         self.root.configure(bg="#2e2e2e")
 
-        # Schriftarten und Farben
+        # Fonts and colours
         self.label_font = ("Helvetica", 16, "bold")
         self.btn_font = ("Helvetica", 14, "bold")
         self.btn_bg = "#444444"
         self.btn_fg = "#DDDDDD"
 
-        # GUI-Elemente erstellen
-        self.create_widgets()
+        # Creates GUI elements
+        self.Create_widgets()
 
-        # Erste Frage laden
-        self.load_next_question()
+        # Loads first question
+        self.Load_next_question()
 
         self.root.mainloop()
 
-    def create_widgets(self):
-        # Frame für die Frage
+    def Create_widgets(self):
+        # Frame for the question
         self.question_frame = tk.Frame(self.root, bg="#2e2e2e")
         self.question_frame.pack(pady=20)
 
@@ -58,12 +61,12 @@ class GameplayScreen:
         )
         self.question_label.pack()
 
-        # Frame für die Antwort-Buttons
+        # Frame for the answer buttons
         self.answer_frame = tk.Frame(self.root, bg="#2e2e2e")
         self.answer_frame.pack(pady=20)
 
         self.answer_buttons = []
-        # Maximal 4 Antwortmöglichkeiten
+        # Maximum of four possible answers
         for i in range(4):
             btn = tk.Button(
                 self.answer_frame,
@@ -77,10 +80,10 @@ class GameplayScreen:
             btn.pack(pady=5, ipadx=20, ipady=10, fill="x")
             self.answer_buttons.append(btn)
 
-        # Frame für den Score
+        # Frame for the score
         self.score_label = tk.Label(
             self.root,
-            text=f"Punkte: {self.score}",
+            text=f"Score: {self.score}",
             font=self.label_font,
             fg="white",
             bg="#2e2e2e",
@@ -90,61 +93,73 @@ class GameplayScreen:
         # Timer-Label
         self.timer_label = tk.Label(
             self.root,
-            text=f"Zeit: {self.time_left} Sekunden",
+            text=f"Time: {self.time_left} seconds",
             font=self.label_font,
             fg="white",
             bg="#2e2e2e",
         )
         self.timer_label.pack(pady=20)
 
-        # Label für Feedback (Richtig/Falsch)
+        # Label for feedback (True/False)
         self.feedback_label = tk.Label(
             self.root, text="", font=self.label_font, fg="white", bg="#2e2e2e"
         )
         self.feedback_label.pack(pady=20)
 
-    def load_next_question(self):
-        # Überprüfen, ob das Spiel beendet wurde und beendet die Methode
+        # Button to end the game (top right)
+        self.end_game_button = tk.Button(
+            self.root,
+            text="End Game",
+            font=self.btn_font,
+            bg=self.btn_bg,
+            fg=self.btn_fg,
+            relief="flat",
+            command=self.end_game,  # Calls up the method for exiting the game
+        )
+        self.end_game_button.place(relx=1.0, rely=0.0, anchor="ne", x=-10, y=10)
+    
+    
+    def Load_next_question(self):
+        # Checks whether the game has ended
         if self.time_left <= 0:
             return
 
-        # Lade die nächste Frage
-        question_id = self.question_ids
-        print("ID:", question_id)
-        question_data = self.question_repo.get_question()
-        print(question_data)
-        # Debugging: Überprüfen, welche Schlüssel in question_data vorhanden sind
-        # print(f"Erhaltene Daten für Frage ID {question_id}: {question_data}")
+        # Pauses timer while next question is loaded
+        if hasattr(self, "timer_after_id") and self.timer_after_id is not None:
+            self.root.after_cancel(self.timer_after_id)
+            self.timer_after_id = None
+
+        # Loads the next question
+        self.question_id = self.question_repo.Get_random_questionID(self.not_answert)
+        self.not_answert.remove(self.question_id)
+        question_data = self.question_repo.Get_question()
 
         try:
             question_text = question_data.get("questionText", "Keine Frage vorhanden")
-            correct_answer = question_data.get(
-                "correctAnswer", "Keine richtige Antwort"
-            )
+            correct_answer = question_data.get("correctAnswer", "Keine richtige Antwort")
             incorrect_answers = [
                 question_data.get("incorrectAnswer1", "Keine falsche Antwort 1"),
                 question_data.get("incorrectAnswer2", "Keine falsche Antwort 2"),
                 question_data.get("incorrectAnswer3", "Keine falsche Antwort 3"),
             ]
-            difficulty_id = question_data.get(
-                "difficultyID", -1
-            )  # Standardwert, wenn nicht vorhanden
+            difficulty_id = question_data.get("difficultyID", -1)  # Default value, if not available
 
-            print(f"Frage: {question_text}")
-            print(f"Richtige Antwort: {correct_answer}")
-            print(f"Falsche Antworten: {incorrect_answers}")
-            print(f"Schwierigkeitsgrad: {difficulty_id}")
+            #debugging
+            # print(f"Frage: {question_text}")
+            # print(f"Richtige Antwort: {correct_answer}")
+            # print(f"Falsche Antworten: {incorrect_answers}")
+            # print(f"Schwierigkeitsgrad: {difficulty_id}")
 
         except KeyError as e:
             print(f"Fehlender Schlüssel in den Daten: {e}")
             self.end_game()
             return
 
-        # Mische die Antworten
+        # Mixes the answers
         all_answers = [correct_answer] + incorrect_answers
         random.shuffle(all_answers)
-
-        # Speichere die aktuelle Frage und ihre Daten direkt in der Instanz
+        
+        # Saves the current question and its data directly in the instance
         self.current_question = {
             "question_text": question_text,
             "options": all_answers,
@@ -152,176 +167,202 @@ class GameplayScreen:
             "difficulty": difficulty_id,
         }
 
-        # Frage und Antworten in der GUI anzeigen
+        # Displays questions and answers in the GUI
         self.question_label.config(
-            text=f"Frage ID: {question_id}\n\n{self.current_question['question_text']}\n\n"
+            text=f"{self.current_question['question_text']}\n\n"
         )
         for i, option in enumerate(self.current_question["options"]):
             self.answer_buttons[i].config(text=option, state="normal")
-
-        # Schwierigkeit anzeigen
-        difficulty_mapping = {
-            1: ("leicht", "green"),
-            2: ("mittel", "yellow"),
-            3: ("schwer", "red"),
-        }
+        difficulty_repo = DifficultyRepository()
+        difficulty_mapping = difficulty_repo.Get_all_difficulties()  
+        # difficulty_mapping = {
+        #     1: ("leicht", "green"),
+        #     2: ("mittel", "yellow"),
+        #     3: ("schwer", "red"),
+        # }
         difficulty_text, difficulty_color = difficulty_mapping.get(
             self.current_question["difficulty"], ("unbekannt", "white")
         )
 
         if hasattr(self, "difficulty_label"):
-            # Entferne das alte Label, falls vorhanden
+            # Removes the old label, if present
             self.difficulty_label.destroy()
 
+        # Creates difficulty display
         self.difficulty_label = tk.Label(
-            self.root,
-            text=f"Schwierigkeit: {difficulty_text.capitalize()}",
+            self.question_frame,
+            text=f"Difficulty: {difficulty_text.capitalize()}",
             font=self.label_font,
             fg=difficulty_color,
             bg="#2e2e2e",
         )
-        self.difficulty_label.pack(pady=10)
+        # Places the difficulty indicator in the centre above the question
+        self.difficulty_label.pack(pady=(0, 10))
 
-        # Punkte für die aktuelle Frage holen
-        question_points = self.question_repo.get_question_points(question_id)
-        self.current_question_points = question_points[1] if question_points else 0
+        # Gets points for the current question
+        question_points = self.question_repo.Get_question_points(self.question_id)
+        self.current_question_points = question_points if question_points else 0
 
-        self.current_question_index += 1
-
-        # Timer zurücksetzen und starten
-        self.time_left = 10
+        # Continues timer
         self.update_timer()
 
     def update_timer(self):
         if self.time_left > 0:
             self.timer_label.config(text=f"Zeit: {self.time_left} Sekunden")
             self.time_left -= 1
-            # Speichere das after-Handle
+            # Saves the after handle
             self.timer_after_id = self.root.after(1000, self.update_timer)
         else:
-            # Zeit abgelaufen
-            if self.time_left == 0:  # Verhindere mehrfaches Aufrufen von end_game
-                self.end_game()
+            # Time expired
+            if hasattr(self, "timer_after_id") and self.timer_after_id is not None:
+                self.root.after_cancel(self.timer_after_id)
+                self.timer_after_id = None 
+            self.end_game()
 
-    # holt die ausgewählte Antwort, überprüft sie nach richtigkeit und schwierigkeit, und berechnet die Punkte
+    # Retrieves the selected answer, checks it for correctness and difficulty, and calculates the points
     def check_answer(self, selected_index):
         selected_answer = self.current_question["options"][selected_index]
         is_correct = selected_answer == self.current_question["correct_answer"]
         difficulty = self.current_question["difficulty"]
-
-        question_points = self.calculate_question_points(
-            is_correct, difficulty, self.time_left
-        )
+        difficulty_repo = DifficultyRepository()
+        difficulty_name = difficulty_repo.Get_value_from_table("Difficulty", "difficultyName", "difficultyID",difficulty)
+        question_points = difficulty_repo.get_difficulty_infos("difficultyPoints","difficultyID",difficulty)
+        # print("difficulty 2", difficulty)
+        # question_points = self.calculate_question_points(is_correct, difficulty, self.time_left)
+       
+        
         if is_correct:
-            self.score += question_points
+            time_bonus = self.time_left * 10 
+            self.score += (question_points + time_bonus)
             self.feedback_label.config(
-                text=f"Richtig! (+{question_points} Punkte)", fg="green"
+                text=f"Correct! (+{question_points} Punkte)", fg="green"
             )
+            
+            # Checks a player's answer and updates the statistics based on the difficulty of the question.
+            
+
+            # Determines the field based on the difficulty
+            if difficulty_name == 'easy':
+                field = 'correctEasyQuestions'
+            elif difficulty_name == 'medium':
+                field = 'correctMediumQuestions'
+            elif difficulty_name == 'hard':
+                field = 'correctHardQuestions'
+            else:
+                raise ValueError("Invalid difficulty: " + str(difficulty_name))
+            old_value = self.player_repo.Get_playerfield_info(field)
+            new_value = old_value + 1
+            self.player_repo.Update_player_field(field, new_value) 
         else:
             self.feedback_label.config(
-                text=f"Falsch! Richtige Antwort: {self.current_question['correct_answer']}",
-                fg="red",
+                    text=f"Wrong! The right answer was: {self.current_question['correct_answer']}",
+                    fg="red",
+                )
+
+        # Updates the score
+        self.score_label.config(text=f"Points: {self.score}")
+
+        # Loads the next question after a short delay
+        self.next_question_after_id = self.root.after(2000, self.Load_next_question)
+
+    #
+    def Check_for_achievement(self, player_data):
+         
+        achievment_repo =AchievmentRepository()
+        achievmentsInfos=achievment_repo.Get_all_achievements()
+        
+        self.player = Player(
+                            player_id=self.player_id,
+                            score=player_data[1],  
+                            correctHardQuestions=player_data[2],
+                            correctMediumQuestions=player_data[3],
+                            correctEasyQuestions=player_data[4] 
+                            )
+
+        player_achievements = self.player_repo.Get_all_player_achievements()
+        check_achievment = self.player.Receive_achievement(achievmentsInfos[0],achievmentsInfos[1], achievmentsInfos[2], player_achievements)
+
+        if check_achievment:
+            achievment_repo.Fill_player_to_achievments(
+                player_data[0], check_achievment
             )
 
-        # Aktualisiere den Punktestand
-        self.score_label.config(text=f"Punkte: {self.score}")
-
-        # Lade die nächste Frage nach kurzer Verzögerung
-        self.next_question_after_id = self.root.after(2000, self.load_next_question)
-
+        # new_value_correctanswer = pr.get_correct_Questions_by_difficulty("medium")
+       
+    
     def end_game(self):
-        # Stoppe den Timer
         self.time_left = 0
+        
+        
+        # Cancelling the scheduled after-callback for the timer
+        if hasattr(self, "timer_after_id") and self.timer_after_id is not None:
+            try:
+                self.root.after_cancel(self.timer_after_id)
+            except ValueError:
+                pass  # Timer has already expired
+            self.timer_after_id = None
 
-        # Abbrechen des geplanten after-Callbacks für den Timer
-        if hasattr(self, "timer_after_id"):
-            self.root.after_cancel(self.timer_after_id)
+        if hasattr(self, "next_question_after_id") and self.next_question_after_id is not None:
+            try:
+                self.root.after_cancel(self.next_question_after_id)
+            except ValueError:
+                pass  # Callback is already executed
+            self.next_question_after_id = None
 
-        if hasattr(self, "next_question_after_id"):
-            self.root.after_cancel(self.next_question_after_id)
-
-        # Entferne alle Widgets und zeige die Endpunktzahl
+        # Removes all widgets and shows the final score
         for widget in self.root.winfo_children():
             widget.destroy()
 
-        # Zeige die Punktzahl
+        # Shows the score
         tk.Label(
             self.root,
-            text=f"Spiel beendet! Deine Punktzahl: {self.score}",
+            text=f"Good Job! Your score is: {self.score}",
             font=self.label_font,
             fg="white",
             bg="#2e2e2e",
         ).pack(pady=20)
 
-        # Aktualisiere den höchsten Punktestand des Spielers
-        player_id = 1  # Beispiel: Ersetze dies durch die tatsächliche Spieler-ID
-
-        self.update_high_score(player_id, self.score)
-
-        # Button zum Entry-Screen
+        # Updates the player's highest score
+        playerData = self.player_repo.Get_value_from_table("Player","playerID, playerScore, correctHardQuestions,correctMediumQuestions,correctEasyQuestions","playerID",self.player_repo.Get_player_id())
+        self.player_id = playerData[0]
+        
+        self.Update_high_score()
+        self.Check_for_achievement(playerData)
+       
+        # Button to go back to the main screen
         tk.Button(
             self.root,
-            text="Zurück zum Hauptmenü",
+            text="Back to Mainmenu",
             font=self.btn_font,
             bg=self.btn_bg,
             fg=self.btn_fg,
             relief="flat",
-            command=self.return_to_entry_screen,
+            command=self.return_to_entryScreen,
         ).pack(pady=20, ipadx=20, ipady=10)
 
-        # Button zum Leaderboard
+        # Button to the leaderboard
         tk.Button(
             self.root,
-            text="Leaderboard anzeigen",
+            text="Leaderboard",
             font=self.btn_font,
             bg=self.btn_bg,
             fg=self.btn_fg,
             relief="flat",
-            command=self.show_leaderboard,
+            command=self.Show_leaderboard,
         ).pack(pady=20, ipadx=20, ipady=10)
+        
+        
+    def return_to_entryScreen(self):
+        from GUI.entry_screen import entryScreen  # Dynamischer Import, um zirkuläre Abhängigkeiten zu vermeiden
+        self.root.destroy()  # Schließt das aktuelle Fenster
+        entryScreen(self.player_repo)  # Öffnet den Entry Screen und übergibt das Player Repository# 
 
-    def show_leaderboard(self):
+    def Show_leaderboard(self):
         self.root.destroy()
-        from GUI.leaderboard_screen import leaderboard_screen  # Importiere die Funktion
+        leaderboardScreen(self.player_repo)  # Starts the leaderboard screen
 
-        leaderboard_screen()  # Starte die Leaderboard-Screen-Funktion
-
-    def update_high_score(self, player_id, final_score):
-        player_repo = PlayerRepository()
-        player_repo.update_high_score(player_id, final_score)
-        print(f"Game ended. Final score for player {player_id}: {final_score}")
-
-    def return_to_entry_screen(self):
-        self.root.destroy()
-        from GUI.entry_screen import entry_screen  # Importieren Sie die Funktion
-
-        entry_screen()  # Starten Sie den Entry-Screen
-
-    def calculate_question_points(self, is_correct, difficulty, time_left):
-        """
-        difficulty: Die Schwierigkeit der Frage (z. B. "leicht", "mittel", "schwer")
-        param time_left: Verbleibende Zeit in Sekunden
-        return: Punkte für die Frage
-        """
-        if not is_correct:
-            return 0  # Keine Punkte für falsche Antworten
-
-        # Basispunkte basierend auf der Schwierigkeit
-        base_points = {
-            "leicht": 1000,
-            "mittel": 1500,
-            "schwer": 2000,
-        }.get(
-            difficulty, 1000
-        )  # Standard: 1000 Punkte für unbekannte Schwierigkeit
-
-        # Bonuspunkte basierend auf der verbleibenden Zeit
-        time_bonus = time_left * 10  # 10 Punkte pro verbleibender Sekunde
-
-        return base_points + time_bonus
-
-
-# Beispielaufruf
-if __name__ == "__main__":
-    # Ersetze `1` durch die tatsächliche Kategorie-ID, die zuvor ausgewählt wurde
-    GameplayScreen(category_id=1)
+    def Update_high_score(self):
+        self.player_repo.Update_high_score(self.player_id,self.score)
+        print(f"Game ended. Final score for player {self.player_id}: {self.score}")
+    
+   

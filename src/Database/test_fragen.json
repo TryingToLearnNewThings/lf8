@@ -13,7 +13,7 @@
       "type": "multiple",
       "difficulty": "hard",
       "category": "Entertainment: Video Games",
-      "question": "How long was the World Record Speed Run of Valve Software&#039;s &quot;Half-Life&quot; that was done in 2014.",
+      "question": "How long was the World Record Speed Run of Valve Software's 'Half-Life' that was done in 2014.",
       "correct_answer": "20 Minutes, 41 Seconds",
       "incorrect_answers": [
         "45 Minutes, 32 Seconds",
@@ -25,7 +25,7 @@
       "type": "multiple",
       "difficulty": "easy",
       "category": "Entertainment: Video Games",
-      "question": "&quot;Minecraft&quot; was released from beta in 2011 during a convention held in which city?",
+      "question": "'Minecraft' was released from beta in 2011 during a convention held in which city?",
       "correct_answer": "Las Vegas",
       "incorrect_answers": ["Paris", "Bellevue", "London"]
     },
@@ -33,7 +33,7 @@
       "type": "multiple",
       "difficulty": "hard",
       "category": "Entertainment: Video Games",
-      "question": "In TF2 Lore, what are the names of the Heavy&#039;s younger sisters?",
+      "question": "In TF2 Lore, what are the names of the Heavy's younger sisters?",
       "correct_answer": "Yana and Bronislava",
       "incorrect_answers": [
         "Gaba and Anna",
@@ -46,18 +46,18 @@
       "difficulty": "easy",
       "category": "Entertainment: Video Games",
       "question": "Which Kirby game first introduced Copy Abilities?",
-      "correct_answer": "Kirby&#039;s Adventure",
+      "correct_answer": "Kirby's Adventure",
       "incorrect_answers": [
         "Kirby Super Star",
-        "Kirby&#039;s Dream Land 2",
-        "Kirby&#039;s Dream Land"
+        "Kirby's Dream Land 2",
+        "Kirby's Dream Land"
       ]
     },
     {
       "type": "multiple",
       "difficulty": "hard",
       "category": "Entertainment: Video Games",
-      "question": "What was the name of the hero in the 80s animated video game &#039;Dragon&#039;s Lair&#039;?",
+      "question": "What was the name of the hero in the 80s animated video game 'Dragon's Lair'?",
       "correct_answer": "Dirk the Daring",
       "incorrect_answers": ["Arthur", "Sir Toby Belch", "Guy of Gisbourne"]
     },
@@ -65,7 +65,7 @@
       "type": "multiple",
       "difficulty": "medium",
       "category": "Entertainment: Video Games",
-      "question": "In World of Warcraft lore, who was first to have the title &quot;The Ashbringer&quot;?",
+      "question": "In World of Warcraft lore, who was first to have the title 'The Ashbringer'?",
       "correct_answer": "Alexandros Mograine",
       "incorrect_answers": [
         "Tirion Fordring",
@@ -113,7 +113,7 @@
       "type": "multiple",
       "difficulty": "easy",
       "category": "Entertainment: Video Games",
-      "question": "Which Greek letter represents the &quot;Half-Life&quot; logo?",
+      "question": "Which Greek letter represents the 'Half-Life' logo?",
       "correct_answer": "Lambda",
       "incorrect_answers": ["Omega", "Alpha", "Sigma"]
     },
@@ -133,7 +133,7 @@
       "type": "multiple",
       "difficulty": "hard",
       "category": "Entertainment: Video Games",
-      "question": "In &quot;Starbound&quot;, according to the asset files, the description of the &quot;Erchius Ghost&quot; is the same as which other assets?",
+      "question": "In 'Starbound', according to the asset files, the description of the 'Erchius Ghost' is the same as which other assets?",
       "correct_answer": "Spookit",
       "incorrect_answers": ["Petricub", "Trictus", "Pyromantle"]
     },
@@ -141,7 +141,7 @@
       "type": "multiple",
       "difficulty": "medium",
       "category": "Entertainment: Video Games",
-      "question": "Which Crypt of the NecroDancer (2015) character has a soundtrack by Jake &quot;Virt&quot; Kaufman?",
+      "question": "Which Crypt of the NecroDancer (2015) character has a soundtrack by Jake 'Virt' Kaufman?",
       "correct_answer": "Uncle Eli",
       "incorrect_answers": ["Cadence", "Nocturna", "Octavian (Bard)"]
     },
@@ -157,7 +157,7 @@
       "type": "multiple",
       "difficulty": "medium",
       "category": "Entertainment: Video Games",
-      "question": "Which car is NOT featured in &quot;Need for Speed: Hot Pursuit 2&quot;?",
+      "question": "Which car is NOT featured in 'Need for Speed: Hot Pursuit 2'?",
       "correct_answer": "Toyota MR2",
       "incorrect_answers": ["Ford Crown Victoria", "BMW Z8", "McLaren F1"]
     },
@@ -165,12 +165,12 @@
       "type": "multiple",
       "difficulty": "medium",
       "category": "Entertainment: Video Games",
-      "question": "In Overwatch, what is L&uacute;cio&#039;s full name?",
-      "correct_answer": "L&uacute;cio Correia Dos Santos",
+      "question": "In Overwatch, what is Lucio's full name?",
+      "correct_answer": "Lucio Correia Dos Santos",
       "incorrect_answers": [
-        "L&uacute;cio Luiz L&oacute;s Guilherme",
-        "L&uacute;cio Jo&atilde;o Lucas",
-        "L&uacute;cio Chupar Prima"
+        "Lucio Luiz Las Guilherme",
+        "Lucio Joao Lucas",
+        "Lucio Chupar Prima"
       ]
     },
     {
@@ -185,7 +185,7 @@
       "type": "multiple",
       "difficulty": "easy",
       "category": "Entertainment: Video Games",
-      "question": "In the game &quot;Fire Emblem: Shadow Dragon&quot;, what is the central protagonist&#039;s name?",
+      "question": "In the game 'Fire Emblem: Shadow Dragon', what is the central protagonist's name?",
       "correct_answer": "Marth",
       "incorrect_answers": ["Roy", "Eliwood", "Robin"]
     },
@@ -201,7 +201,7 @@
       "type": "multiple",
       "difficulty": "medium",
       "category": "Entertainment: Video Games",
-      "question": "What is the main character&#039;s name in &quot;Braid&quot;?",
+      "question": "What is the main character's name in 'Braid'?",
       "correct_answer": "Tim",
       "incorrect_answers": ["Boregard", "James", "Jackson"]
     },
@@ -210,7 +210,7 @@
       "difficulty": "easy",
       "category": "Entertainment: Video Games",
       "question": "Which of the following Zelda games did not feature Ganon as a final boss?",
-      "correct_answer": "Majora&#039;s Mask",
+      "correct_answer": "Majora's Mask",
       "incorrect_answers": [
         "Ocarina of Time",
         "Skyward Sword",
@@ -241,7 +241,7 @@
       "type": "multiple",
       "difficulty": "hard",
       "category": "Entertainment: Video Games",
-      "question": "In the Mario Kart series, which game introduced the &quot;Shield Drifting&quot; mechanic?",
+      "question": "In the Mario Kart series, which game introduced the 'Shield Drifting' mechanic?",
       "correct_answer": "Mario Kart Arcade GP DX",
       "incorrect_answers": [
         "Mario Kart: Double Dash",
@@ -253,7 +253,7 @@
       "type": "multiple",
       "difficulty": "hard",
       "category": "Entertainment: Video Games",
-      "question": "In World of Warcraft lore, which of the following is known as the God of Spiders in the troll&#039;s loa beliefs?",
+      "question": "In World of Warcraft lore, which of the following is known as the God of Spiders in the troll's loa beliefs?",
       "correct_answer": "Elortha no Shadra",
       "incorrect_answers": ["Bwonsamdi", "Hakkar", "Shirvallah"]
     },
@@ -269,7 +269,7 @@
       "type": "multiple",
       "difficulty": "hard",
       "category": "Entertainment: Video Games",
-      "question": "Which monster in &quot;Monster Hunter Tri&quot; was causing earthquakes in Moga Village?",
+      "question": "Which monster in 'Monster Hunter Tri' was causing earthquakes in Moga Village?",
       "correct_answer": "Ceadeus",
       "incorrect_answers": ["Alatreon", "Rathalos", "Lagiacrus"]
     },
@@ -285,7 +285,7 @@
       "type": "multiple",
       "difficulty": "medium",
       "category": "Entertainment: Video Games",
-      "question": "What is the name the location-based augmented reality game developed by Niantic before Pok&eacute;mon GO?",
+      "question": "What is the name the location-based augmented reality game developed by Niantic before Pokemon GO?",
       "correct_answer": "Ingress",
       "incorrect_answers": ["Aggress", "Regress", "Digress"]
     },
@@ -293,7 +293,7 @@
       "type": "multiple",
       "difficulty": "easy",
       "category": "Entertainment: Video Games",
-      "question": "Which game did &quot;Sonic The Hedgehog&quot; make his first appearance in?",
+      "question": "Which game did 'Sonic The Hedgehog' make his first appearance in?",
       "correct_answer": "Rad Mobile",
       "incorrect_answers": ["Sonic The Hedgehog", "Super Mario 64", "Mega Man"]
     },
@@ -301,7 +301,7 @@
       "type": "multiple",
       "difficulty": "medium",
       "category": "Entertainment: Video Games",
-      "question": "Who is the main character in the video game &quot;Just Cause 3&quot;?",
+      "question": "Who is the main character in the video game 'Just Cause 3'?",
       "correct_answer": "Rico Rodriguez",
       "incorrect_answers": ["Tom Sheldon", "Marcus Holloway", "Mario Frigo"]
     },
@@ -317,7 +317,7 @@
       "type": "multiple",
       "difficulty": "medium",
       "category": "Entertainment: Video Games",
-      "question": "Which of the following is NOT an official game in Nintendo&#039;s Super Smash Bros. series?",
+      "question": "Which of the following is NOT an official game in Nintendo's Super Smash Bros. series?",
       "correct_answer": "Super Smash Bros. Crusade",
       "incorrect_answers": [
         "Super Smash Bros. Melee",
@@ -329,7 +329,7 @@
       "type": "multiple",
       "difficulty": "medium",
       "category": "Entertainment: Video Games",
-      "question": "The &#039;64&#039; in the Nintendo-64 console refers to what?",
+      "question": "The '64' in the Nintendo-64 console refers to what?",
       "correct_answer": "The bits in the CPU architecture",
       "incorrect_answers": [
         "The number of megabytes of RAM",
@@ -349,7 +349,7 @@
       "type": "multiple",
       "difficulty": "easy",
       "category": "Entertainment: Video Games",
-      "question": "Which of these is NOT the name of a rival gang in the video game Saint&#039;s Row 2?",
+      "question": "Which of these is NOT the name of a rival gang in the video game Saint's Row 2?",
       "correct_answer": "The Zin Empire",
       "incorrect_answers": [
         "The Brotherhood",
@@ -361,7 +361,7 @@
       "type": "multiple",
       "difficulty": "hard",
       "category": "Entertainment: Video Games",
-      "question": "What was the world&#039;s first video game?",
+      "question": "What was the world's first video game?",
       "correct_answer": "Tennis for Two",
       "incorrect_answers": ["Spacewar!", "Pong", "Space Travel"]
     },
@@ -369,7 +369,7 @@
       "type": "multiple",
       "difficulty": "medium",
       "category": "Entertainment: Video Games",
-      "question": "In the 2015 RPG &quot;Undertale&quot;, which character do you first encounter after falling down into the underground?",
+      "question": "In the 2015 RPG 'Undertale', which character do you first encounter after falling down into the underground?",
       "correct_answer": "Flowey",
       "incorrect_answers": ["Toriel", "Sans", "Papyrus"]
     },
@@ -377,7 +377,7 @@
       "type": "multiple",
       "difficulty": "medium",
       "category": "Entertainment: Video Games",
-      "question": "Which of these weapons is NOT available to the Terrorist team in the game, &quot;Counter-Strike: Global Offensive&quot;?",
+      "question": "Which of these weapons is NOT available to the Terrorist team in the game, 'Counter-Strike: Global Offensive'?",
       "correct_answer": "SCAR-20",
       "incorrect_answers": ["SG 550", "CZ-75", "XM1014"]
     },
@@ -385,7 +385,7 @@
       "type": "multiple",
       "difficulty": "medium",
       "category": "Entertainment: Video Games",
-      "question": "In the &quot;Call Of Duty: Zombies&quot; map &quot;Moon&quot;, there is a secondary called the QED. What does QED stand for?",
+      "question": "In the 'Call Of Duty: Zombies' map 'Moon', there is a secondary called the QED. What does QED stand for?",
       "correct_answer": "Quantum Entanglement Device",
       "incorrect_answers": [
         "Quad Ectoplasmic Driver",
@@ -418,14 +418,14 @@
       "incorrect_answers": [
         "Zelda II: The Adventure of Link",
         "The Legend of Zelda: Four Swords Adventures",
-        "The Legend of Zelda: Majora&#039;s Mask"
+        "The Legend of Zelda: Majora's Mask"
       ]
     },
     {
       "type": "multiple",
       "difficulty": "medium",
       "category": "Entertainment: Video Games",
-      "question": "The walls of the Goldenrod City Gym in &quot;Pok&eacute;mon Gold and Silver&quot; are arranged in the shape of which Pok&eacute;mon?",
+      "question": "The walls of the Goldenrod City Gym in 'Pokemon Gold and Silver' are arranged in the shape of which Pokemon?",
       "correct_answer": "Clefairy",
       "incorrect_answers": ["Bulbasaur", "Pikachu", "Pidgey"]
     },
@@ -433,7 +433,7 @@
       "type": "multiple",
       "difficulty": "easy",
       "category": "Entertainment: Video Games",
-      "question": "In Pokemon Red &amp; Blue, what is the name of HM05?",
+      "question": "In Pokemon Red and Blue, what is the name of HM05?",
       "correct_answer": "Flash",
       "incorrect_answers": ["Strength", "Cut", "Fly"]
     },
@@ -449,7 +449,7 @@
       "type": "multiple",
       "difficulty": "hard",
       "category": "Entertainment: Video Games",
-      "question": "In the &quot;Little Lost Girl&quot; Easter Egg in Call of Duty: Black Ops II, what&#039;s the last step required for the achievement?",
+      "question": "In the 'Little Lost Girl' Easter Egg in Call of Duty: Black Ops II, what's the last step required for the achievement?",
       "correct_answer": "Raise Hell",
       "incorrect_answers": [
         "Freedom",
@@ -469,7 +469,7 @@
       "type": "multiple",
       "difficulty": "medium",
       "category": "Geography",
-      "question": "Colchester Overpass, otherwise known as &quot;Bunny Man Bridge&quot;, is located where?",
+      "question": "Colchester Overpass, otherwise known as 'Bunny Man Bridge', is located where?",
       "correct_answer": "Fairfax County, Virginia",
       "incorrect_answers": [
         "Medford, Oregon",
@@ -497,7 +497,7 @@
       "type": "multiple",
       "difficulty": "medium",
       "category": "Geography",
-      "question": "Which of the following is not a megadiverse country - one that harbors a high number of the earth&#039;s endemic species?",
+      "question": "Which of the following is not a megadiverse country - one that harbors a high number of the earth's endemic species?",
       "correct_answer": "Thailand",
       "incorrect_answers": ["Peru", "Mexico", "South Africa"]
     },
@@ -581,7 +581,7 @@
       "type": "multiple",
       "difficulty": "hard",
       "category": "Geography",
-      "question": "In 2012 the German-speaking microstate &quot;Liechtenstein&quot; in Central Europe had a population of how many inhabitants?",
+      "question": "In 2012 the German-speaking microstate 'Liechtenstein' in Central Europe had a population of how many inhabitants?",
       "correct_answer": "36,600",
       "incorrect_answers": ["2,400", "90,000", "323,400"]
     },
@@ -590,11 +590,11 @@
       "difficulty": "medium",
       "category": "Geography",
       "question": "Which two modern-day countries used to be known as the region of Rhodesia between the 1890s and 1980?",
-      "correct_answer": "Zambia &amp; Zimbabwe",
+      "correct_answer": "Zambia and Zimbabwe",
       "incorrect_answers": [
-        "Togo &amp; Benin",
-        "Lesotho &amp; Swaziland",
-        "Rwanda &amp; Burundi"
+        "Togo and Benin",
+        "Lesotho and Swaziland",
+        "Rwanda and Burundi"
       ]
     },
     {
@@ -670,8 +670,8 @@
       "difficulty": "medium",
       "category": "Geography",
       "question": "Which of these countries is not written in its native language?",
-      "correct_answer": "Slova&scaron;ko",
-      "incorrect_answers": ["Suomi", "Schweiz", "Ell&aacute;da"]
+      "correct_answer": "Slovasko",
+      "incorrect_answers": ["Suomi", "Schweiz", "Ellada"]
     },
     {
       "type": "multiple",
@@ -689,7 +689,7 @@
       "correct_answer": "The 1936 Olympics",
       "incorrect_answers": [
         "Coronation of Prince Johann I Joseph in 1805",
-        "Charles VI&#039;s decree in 1719",
+        "Charles VI's decree in 1719",
         "Signing of the 1862 Constitution of Liechtenstein"
       ]
     },
@@ -819,7 +819,7 @@
       "category": "Geography",
       "question": "What is the capital of Seychelles?",
       "correct_answer": "Victoria",
-      "incorrect_answers": ["Luanda", "N&#039;Djamena", "Tripoli"]
+      "incorrect_answers": ["Luanda", "N'Djamena", "Tripoli"]
     },
     {
       "type": "multiple",
@@ -885,7 +885,7 @@
       "type": "multiple",
       "difficulty": "medium",
       "category": "Geography",
-      "question": "Where is Hadrian&#039;s Wall located?",
+      "question": "Where is Hadrian's Wall located?",
       "correct_answer": "Carlisle, England",
       "incorrect_answers": [
         "Rome, Italy",
@@ -965,7 +965,7 @@
       "type": "multiple",
       "difficulty": "medium",
       "category": "General Knowledge",
-      "question": "The term &quot;scientist&quot; was coined in which year?",
+      "question": "The term 'scientist' was coined in which year?",
       "correct_answer": "1833",
       "incorrect_answers": ["1933", "1942", "1796"]
     },
@@ -973,7 +973,7 @@
       "type": "multiple",
       "difficulty": "medium",
       "category": "General Knowledge",
-      "question": "When did the website &quot;Facebook&quot; launch?",
+      "question": "When did the website 'Facebook' launch?",
       "correct_answer": "2004",
       "incorrect_answers": ["2005", "2003", "2006"]
     },
@@ -990,7 +990,7 @@
       "difficulty": "easy",
       "category": "General Knowledge",
       "question": "How would one say goodbye in Spanish?",
-      "correct_answer": "Adi&oacute;s",
+      "correct_answer": "Adios",
       "incorrect_answers": [" Hola", "Au Revoir", "Salir"]
     },
     {
@@ -1005,7 +1005,7 @@
       "type": "multiple",
       "difficulty": "easy",
       "category": "General Knowledge",
-      "question": "When one is &quot;envious&quot;, they are said to be what color?",
+      "question": "When one is 'envious', they are said to be what color?",
       "correct_answer": "Green",
       "incorrect_answers": ["Red", "Blue", "Yellow"]
     },
@@ -1029,8 +1029,8 @@
       "type": "multiple",
       "difficulty": "easy",
       "category": "General Knowledge",
-      "question": "Who is considered the &quot;Father of Modern Philosophy&quot;?",
-      "correct_answer": "Ren&eacute; Descartes",
+      "question": "Who is considered the 'Father of Modern Philosophy'?",
+      "correct_answer": "Rene Descartes",
       "incorrect_answers": ["Plato", "Albert Einstein", "Antoine Lavoiser"]
     },
     {
@@ -1053,7 +1053,7 @@
       "type": "multiple",
       "difficulty": "medium",
       "category": "General Knowledge",
-      "question": "What is the name of the popular animatronic singing fish prop, singing such hits such as &quot;Don&#039;t Worry, Be Happy&quot;?",
+      "question": "What is the name of the popular animatronic singing fish prop, singing such hits such as 'Don't Worry, Be Happy'?",
       "correct_answer": "Big Mouth Billy Bass",
       "incorrect_answers": ["Big Billy Bass", "Singing Fish", "Sardeen"]
     },
@@ -1070,8 +1070,8 @@
       "difficulty": "easy",
       "category": "General Knowledge",
       "question": "In which fast food chain can you order a Jamocha Shake?",
-      "correct_answer": "Arby&#039;s",
-      "incorrect_answers": ["McDonald&#039;s", "Burger King", "Wendy&#039;s"]
+      "correct_answer": "Arby's",
+      "incorrect_answers": ["McDonald's", "Burger King", "Wendy's"]
     },
     {
       "type": "multiple",
@@ -1093,7 +1093,7 @@
       "type": "multiple",
       "difficulty": "medium",
       "category": "General Knowledge",
-      "question": "Which of the General Mills Corporation&#039;s monster cereals was the last to be released in the 1970&#039;s?",
+      "question": "Which of the General Mills Corporation's monster cereals was the last to be released in the 1970's?",
       "correct_answer": "Fruit Brute",
       "incorrect_answers": ["Count Chocula", "Franken Berry", "Boo-Berry"]
     },
@@ -1161,7 +1161,7 @@
       "type": "multiple",
       "difficulty": "medium",
       "category": "General Knowledge",
-      "question": "In what year was McDonald&#039;s founded?",
+      "question": "In what year was McDonald's founded?",
       "correct_answer": "1955",
       "incorrect_answers": ["1964", "1951", "1947"]
     },
@@ -1265,7 +1265,7 @@
       "type": "multiple",
       "difficulty": "hard",
       "category": "General Knowledge",
-      "question": "Virtual reality company Oculus VR lost which of it&#039;s co-founders in a freak car accident in 2013?",
+      "question": "Virtual reality company Oculus VR lost which of it's co-founders in a freak car accident in 2013?",
       "correct_answer": "Andrew Scott Reisse",
       "incorrect_answers": ["Nate Mitchell", "Jack McCauley", "Palmer Luckey"]
     },
@@ -1313,7 +1313,7 @@
       "type": "multiple",
       "difficulty": "hard",
       "category": "General Knowledge",
-      "question": "Which musician has collaborated with American producer Porter Robinson and released the 2016 song &quot;Shelter&quot;?",
+      "question": "Which musician has collaborated with American producer Porter Robinson and released the 2016 song 'Shelter'?",
       "correct_answer": "Madeon",
       "incorrect_answers": ["Mat Zo", "deadmau5", "Zedd"]
     },
@@ -1348,7 +1348,7 @@
     {
       "type": "multiple",
       "difficulty": "easy",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "category": "Entertainment: Japanese Anime and Manga",
       "question": "Who is the main heroine of the anime, Full Metal Panic!",
       "correct_answer": "Kaname Chidori",
       "incorrect_answers": ["Teletha Testarossa", "Melissa Mao", "Kyoko Tokiwa"]
@@ -1356,8 +1356,8 @@
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "Who is the creator of the manga series &quot;One Piece&quot;?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "Who is the creator of the manga series 'One Piece'?",
       "correct_answer": "Eiichiro Oda",
       "incorrect_answers": [
         "Yoshihiro Togashi",
@@ -1368,7 +1368,7 @@
     {
       "type": "multiple",
       "difficulty": "easy",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "category": "Entertainment: Japanese Anime and Manga",
       "question": "What is the name of the corgi in Cowboy Bebop?",
       "correct_answer": "Einstein",
       "incorrect_answers": ["Edward", "Rocket", "Joel"]
@@ -1376,16 +1376,16 @@
     {
       "type": "multiple",
       "difficulty": "easy",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "In Ms. Kobayashi&#039;s Dragon Maid, who is Kobayashi&#039;s maid?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "In Ms. Kobayashi's Dragon Maid, who is Kobayashi's maid?",
       "correct_answer": "Tohru",
       "incorrect_answers": ["Lucoa", "Kanna", "Elma"]
     },
     {
       "type": "multiple",
       "difficulty": "hard",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "Which song was the callsign for Stefan Verdemann&#039;s KWFM radio station in Urasawa Naoki&#039;s &quot;Monster&quot;?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "Which song was the callsign for Stefan Verdemann's KWFM radio station in Urasawa Naoki's 'Monster'?",
       "correct_answer": "Over the Rainbow",
       "incorrect_answers": [
         "What a Wonderful World",
@@ -1396,7 +1396,7 @@
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "category": "Entertainment: Japanese Anime and Manga",
       "question": "Which of the following anime of the mecha genre began airing in 1982?",
       "correct_answer": "The Super Dimension Fortress Macross",
       "incorrect_answers": [
@@ -1408,56 +1408,56 @@
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "Who voices the character &quot;Reigen&quot;  in the English dub of &quot;Mob Psycho 100&quot;?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "Who voices the character 'Reigen'  in the English dub of 'Mob Psycho 100'?",
       "correct_answer": "Chris Niosi",
       "incorrect_answers": ["Max Mittelman", "Kyle McCarley", "Casey Mongillo"]
     },
     {
       "type": "multiple",
       "difficulty": "hard",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "In &quot;One Piece&quot;, who is the girl who overcame her enslaved past and became an agent of an army to fight the corrupt government?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "In 'One Piece', who is the girl who overcame her enslaved past and became an agent of an army to fight the corrupt government?",
       "correct_answer": "Koala",
       "incorrect_answers": ["Boa Hancock", "Nico Robin", "Emporio Ivankov "]
     },
     {
       "type": "multiple",
       "difficulty": "hard",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "category": "Entertainment: Japanese Anime and Manga",
       "question": "In the anime Initial D, how does Takumi Fujiwara describe a drift?",
-      "correct_answer": "&#039;. . . the front tires slide so the car won&#039;t face the inside&#039;",
+      "correct_answer": "'. . . the front tires slide so the car won't face the inside'",
       "incorrect_answers": [
-        "&#039;. . . the wheels lose traction, making the car slide sideways&#039;",
-        "&#039;. . . the car oversteers through a curve, causing it to turn faster&#039;",
-        "&#039;. . . you turn a lot&#039;"
+        "'. . . the wheels lose traction, making the car slide sideways'",
+        "'. . . the car oversteers through a curve, causing it to turn faster'",
+        "'. . . you turn a lot'"
       ]
     },
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "The main protagonist of the fifth part of JoJo&#039;s Bizarre Adventure is which of the following?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "The main protagonist of the fifth part of JoJo's Bizarre Adventure is which of the following?",
       "correct_answer": "Giorno Giovanna",
       "incorrect_answers": ["Guido Mista", "Jonathan Joestar", "Joey JoJo"]
     },
     {
       "type": "multiple",
       "difficulty": "hard",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "What is the last line muttered in the anime film &quot;The End of Evangelion&quot;?",
-      "correct_answer": "&quot;How disgusting.&quot;",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "What is the last line muttered in the anime film 'The End of Evangelion'?",
+      "correct_answer": "'How disgusting.'",
       "incorrect_answers": [
-        "&quot;Idiot, I won&#039;t let you kill me!&quot;",
-        "&quot;Nothing.&quot;",
-        "&quot;Goddammit, Shinji.&quot;"
+        "'Idiot, I won't let you kill me!'",
+        "'Nothing.'",
+        "'Goddammit, Shinji.'"
       ]
     },
     {
       "type": "multiple",
       "difficulty": "easy",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "What name is the main character Chihiro given in the 2001 movie &quot;Spirited Away&quot;?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "What name is the main character Chihiro given in the 2001 movie 'Spirited Away'?",
       "correct_answer": "Sen (Thousand)",
       "incorrect_answers": [
         "Hyaku (Hundred)",
@@ -1468,24 +1468,24 @@
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "What is the name of the main character of the anime &quot;One-Punch Man&quot;?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "What is the name of the main character of the anime 'One-Punch Man'?",
       "correct_answer": "Saitama",
       "incorrect_answers": ["Genos", "Sonic", "King"]
     },
     {
       "type": "multiple",
       "difficulty": "easy",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "In the anime &quot;My Hero Academia&quot;, which character is shown with the ability to manipulate gravity?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "In the anime 'My Hero Academia', which character is shown with the ability to manipulate gravity?",
       "correct_answer": "Uraraka",
       "incorrect_answers": ["Bakugo", "Deku", "Asui "]
     },
     {
       "type": "multiple",
       "difficulty": "hard",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "Which person from &quot;JoJo&#039;s Bizarre Adventure&quot; does NOT house a reference to a band, artist, or song earlier than 1980?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "Which person from 'JoJo's Bizarre Adventure' does NOT house a reference to a band, artist, or song earlier than 1980?",
       "correct_answer": "Giorno Giovanna",
       "incorrect_answers": [
         "Josuke Higashikata",
@@ -1496,8 +1496,8 @@
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "In &quot;Highschool DxD&quot;, what is the name of the item some humans are born with?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "In 'Highschool DxD', what is the name of the item some humans are born with?",
       "correct_answer": "Sacred Gear",
       "incorrect_answers": [
         "Imperial Arm",
@@ -1508,8 +1508,8 @@
     {
       "type": "multiple",
       "difficulty": "easy",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "Which Pok&eacute;mon and it&#039;s evolutions were banned from appearing in a main role after the Episode 38 Incident?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "Which Pokemon and it's evolutions were banned from appearing in a main role after the Episode 38 Incident?",
       "correct_answer": "The Porygon Line",
       "incorrect_answers": [
         "The Pikachu Line",
@@ -1520,8 +1520,8 @@
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "In the &quot;Toaru Majutsu no Index&quot; anime, Touma Kamijou is a level 0 esper that has the ability to do what?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "In the 'Toaru Majutsu no Index' anime, Touma Kamijou is a level 0 esper that has the ability to do what?",
       "correct_answer": "Dispell any esper or magical powers",
       "incorrect_answers": [
         "Teleport",
@@ -1532,8 +1532,8 @@
     {
       "type": "multiple",
       "difficulty": "easy",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "What is the name of Funny Valentine&#039;s stand in Jojo&#039;s Bizarre Adventure Part 7, Steel Ball Run?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "What is the name of Funny Valentine's stand in Jojo's Bizarre Adventure Part 7, Steel Ball Run?",
       "correct_answer": "Dirty Deeds Done Dirt Cheap",
       "incorrect_answers": [
         "Filthy Acts Done For A Reasonable Price",
@@ -1544,8 +1544,8 @@
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "In the &quot;Re:Zero&quot; manga series, which of the following Sin Archbishops eats Rem&#039;s existence?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "In the 'Re:Zero' manga series, which of the following Sin Archbishops eats Rem's existence?",
       "correct_answer": "Ley Batenkaitos",
       "incorrect_answers": [
         "Roy Alphard",
@@ -1556,15 +1556,15 @@
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "In &quot;One Piece&quot;, which one of the following is NOT an Ancient Weapon?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "In 'One Piece', which one of the following is NOT an Ancient Weapon?",
       "correct_answer": "Jupiter",
       "incorrect_answers": ["Uranus", "Poseidon", "Pluton"]
     },
     {
       "type": "multiple",
       "difficulty": "easy",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "category": "Entertainment: Japanese Anime and Manga",
       "question": "What caused the titular mascot of Yo-Kai Watch, Jibanyan, to become a yokai?",
       "correct_answer": "Being run over by a truck",
       "incorrect_answers": [
@@ -1576,11 +1576,11 @@
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "What is the name of Ryūko Matoi&#039;s theme song in the anime Kill la Kill?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "What is the name of Ryūko Matoi's theme song in the anime Kill la Kill?",
       "correct_answer": "Before My Body Is Dry",
       "incorrect_answers": [
-        "Don&#039;t Lose Your Way",
+        "Don't Lose Your Way",
         "Till I Die",
         "Suck Your Blood"
       ]
@@ -1588,8 +1588,8 @@
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "Krusty is the guild master of which guild in &quot;Log Horizon&quot;?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "Krusty is the guild master of which guild in 'Log Horizon'?",
       "correct_answer": "D. D. D",
       "incorrect_answers": [
         "Silver Sword",
@@ -1600,8 +1600,8 @@
     {
       "type": "multiple",
       "difficulty": "easy",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "Who was a voice actor for the English dubbing of HOWL&#039;S MOVING CASTLE (2004)?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "Who was a voice actor for the English dubbing of HOWL'S MOVING CASTLE (2004)?",
       "correct_answer": "Christian Bale",
       "incorrect_answers": [
         "Matt Damon",
@@ -1612,25 +1612,25 @@
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "In &quot;Highschool DxD&quot;, Koneko Toujou is from what race?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "In 'Highschool DxD', Koneko Toujou is from what race?",
       "correct_answer": "Nekomata",
       "incorrect_answers": ["Kitsune", "Human", "Kappa"]
     },
     {
       "type": "multiple",
       "difficulty": "easy",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "How many &quot;JoJos&quot; that are protagonists are there in the series &quot;Jojo&#039;s Bizarre Adventure&quot;?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "How many 'JoJos' that are protagonists are there in the series 'Jojo's Bizarre Adventure'?",
       "correct_answer": "8+",
       "incorrect_answers": ["6+", "4+", "5+"]
     },
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "In Pok&eacute;mon Chronicles, why was Misty afraid of Gyarados?",
-      "correct_answer": "She crawled into it&#039;s mouth as a baby.",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "In Pokemon Chronicles, why was Misty afraid of Gyarados?",
+      "correct_answer": "She crawled into it's mouth as a baby.",
       "incorrect_answers": [
         "She found it scary.",
         "She was badly injured from it.",
@@ -1640,16 +1640,16 @@
     {
       "type": "multiple",
       "difficulty": "hard",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "In &quot;Hunter x Hunter&quot;, what are members in Killua&#039;s family known for being?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "In 'Hunter x Hunter', what are members in Killua's family known for being?",
       "correct_answer": "Assassins",
       "incorrect_answers": ["Bandits", "Hunters", "Ninjas"]
     },
     {
       "type": "multiple",
       "difficulty": "easy",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "Which part from the JoJo&#039;s Bizarre Adventure manga is about a horse race across America?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "Which part from the JoJo's Bizarre Adventure manga is about a horse race across America?",
       "correct_answer": "Part 7: Steel Ball Run",
       "incorrect_answers": [
         "Part 6: Stone Ocean",
@@ -1660,15 +1660,15 @@
     {
       "type": "multiple",
       "difficulty": "easy",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "Who was given the title &quot;Full Metal&quot; in the anime series &quot;Full Metal Alchemist&quot;?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "Who was given the title 'Full Metal' in the anime series 'Full Metal Alchemist'?",
       "correct_answer": "Edward Elric",
       "incorrect_answers": ["Alphonse Elric", "Van Hohenheim", "Izumi Curtis"]
     },
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "category": "Entertainment: Japanese Anime and Manga",
       "question": "What colour hair does the main character of the Yu-Gi-Oh! original anime series have?",
       "correct_answer": "Red, black and yellow",
       "incorrect_answers": [
@@ -1680,7 +1680,7 @@
     {
       "type": "multiple",
       "difficulty": "hard",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "category": "Entertainment: Japanese Anime and Manga",
       "question": "Who is One Punch Man voiced by in the Japanese version.",
       "correct_answer": "Makoto Furukawa",
       "incorrect_answers": ["Zach Aguilar", "Kaito Ishikawa", "Max Mittelman "]
@@ -1688,23 +1688,23 @@
     {
       "type": "multiple",
       "difficulty": "hard",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "In the &quot;Dragon Ball&quot; franchise, what is the name of Goku&#039;s brother?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "In the 'Dragon Ball' franchise, what is the name of Goku's brother?",
       "correct_answer": "Raditz",
       "incorrect_answers": ["Gohan", "Vegeta", "Bardock"]
     },
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "What is the name of the final villain in the manga series &quot;Bleach&quot;?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "What is the name of the final villain in the manga series 'Bleach'?",
       "correct_answer": "Yhwach",
       "incorrect_answers": ["Juha Bach", "Yuhabah", "Juhabach"]
     },
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "category": "Entertainment: Japanese Anime and Manga",
       "question": "When was the first episode of Soul Eater released?",
       "correct_answer": "2008",
       "incorrect_answers": ["2003", "2005", "2011"]
@@ -1712,7 +1712,7 @@
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "category": "Entertainment: Japanese Anime and Manga",
       "question": "Which studio animated Soul Eater?",
       "correct_answer": "Bones",
       "incorrect_answers": ["Kyoto Animation", "xebec", "Production I.G"]
@@ -1720,24 +1720,24 @@
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "What was studio Trigger&#039;s first original long-form animated series for television?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "What was studio Trigger's first original long-form animated series for television?",
       "correct_answer": "Kill la Kill",
       "incorrect_answers": ["Kiznaiver", "Inferno Cop", "Gurren Lagann"]
     },
     {
       "type": "multiple",
       "difficulty": "easy",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "What animation studio produced &quot;Gurren Lagann&quot;?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "What animation studio produced 'Gurren Lagann'?",
       "correct_answer": "Gainax",
       "incorrect_answers": ["Kyoto Animation", "Pierrot", "A-1 Pictures"]
     },
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "In &quot;To Love-Ru: Darkness&quot;, which of the girls attempt making a harem for Rito Yuuki?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "In 'To Love-Ru: Darkness', which of the girls attempt making a harem for Rito Yuuki?",
       "correct_answer": "Momo Deviluke",
       "incorrect_answers": [
         "Yami (Golden Darkness)",
@@ -1748,15 +1748,15 @@
     {
       "type": "multiple",
       "difficulty": "hard",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "In &quot;Hunter x Hunter&quot;, which of the following is NOT a type of Nen aura?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "In 'Hunter x Hunter', which of the following is NOT a type of Nen aura?",
       "correct_answer": "Restoration",
       "incorrect_answers": ["Emission", "Transmutation", "Specialization"]
     },
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "category": "Entertainment: Japanese Anime and Manga",
       "question": "What sport is being played in the Anime Eyeshield 21?",
       "correct_answer": "American Football",
       "incorrect_answers": ["Baseball", "Football", "Basketball"]
@@ -1764,7 +1764,7 @@
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "category": "Entertainment: Japanese Anime and Manga",
       "question": "Which studio made Cowboy Bebop?",
       "correct_answer": "Sunrise",
       "incorrect_answers": ["Bones", "Madhouse", "Pierriot"]
@@ -1772,8 +1772,8 @@
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "In &quot;Shakugan no Shana&quot; what was the Shana usually referred as?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "In 'Shakugan no Shana' what was the Shana usually referred as?",
       "correct_answer": "Flame-Haired Burning-Eyed Hunter",
       "incorrect_answers": [
         "Flame Haze",
@@ -1784,7 +1784,7 @@
     {
       "type": "multiple",
       "difficulty": "easy",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "category": "Entertainment: Japanese Anime and Manga",
       "question": "In the anime Noragami who is one of the main protagonists?",
       "correct_answer": "Yukine",
       "incorrect_answers": ["Karuha", "Mineha", "Mayu"]
@@ -1792,8 +1792,8 @@
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "What song plays in the ending credits of the anime &quot;Ergo Proxy&quot;?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "What song plays in the ending credits of the anime 'Ergo Proxy'?",
       "correct_answer": "Paranoid Android",
       "incorrect_answers": [
         "Sadistic Summer",
@@ -1804,23 +1804,23 @@
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "In &quot;JoJo&#039;s Bizarre Adventure&quot;, which of the following Stands does NOT have a time-based ability?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "In 'JoJo's Bizarre Adventure', which of the following Stands does NOT have a time-based ability?",
       "correct_answer": "20th Century Boy",
       "incorrect_answers": ["Made in Heaven", "Star Platinum", "The World"]
     },
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "In &quot;To Love-Ru&quot;, who is the first to hear of Yami&#039;s past from her?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "In 'To Love-Ru', who is the first to hear of Yami's past from her?",
       "correct_answer": "Rito",
       "incorrect_answers": ["Mikan", "Lala", "Haruna"]
     },
     {
       "type": "multiple",
       "difficulty": "hard",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "category": "Entertainment: Japanese Anime and Manga",
       "question": "Who is the horror manga artist who made Uzumaki?",
       "correct_answer": "Junji Ito",
       "incorrect_answers": ["Kazuo Umezu", "Shintaro Kago", "Sui Ishida"]
@@ -1828,8 +1828,8 @@
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "Which Japanese music group was formed to produce theme music for the anime &quot;Guilty Crown&quot;?",
+      "category": "Entertainment: Japanese Anime and Manga",
+      "question": "Which Japanese music group was formed to produce theme music for the anime 'Guilty Crown'?",
       "correct_answer": "Egoist",
       "incorrect_answers": ["Goose house", "Babymetal", "Garnidelia"]
     },
@@ -1861,7 +1861,7 @@
       "type": "multiple",
       "difficulty": "easy",
       "category": "Politics",
-      "question": "Which former US president was nicknamed &quot;Teddy&quot; after he refused to shoot a defenseless black bear?",
+      "question": "Which former US president was nicknamed 'Teddy' after he refused to shoot a defenseless black bear?",
       "correct_answer": "Theodore Roosevelt",
       "incorrect_answers": [
         "Woodrow Wilson",
@@ -1901,7 +1901,7 @@
       "type": "multiple",
       "difficulty": "easy",
       "category": "Politics",
-      "question": "Whose 2016 presidential campaign slogan was &quot;Make America Great Again&quot;?",
+      "question": "Whose 2016 presidential campaign slogan was 'Make America Great Again'?",
       "correct_answer": "Donald Trump",
       "incorrect_answers": ["Ted Cruz", "Marco Rubio", "Bernie Sanders"]
     },
@@ -1965,7 +1965,7 @@
       "type": "multiple",
       "difficulty": "hard",
       "category": "Politics",
-      "question": "&quot;Yes, America Can!&quot; was this United States politician&#039;s de facto campaign slogan in 2004.",
+      "question": "'Yes, America Can!' was this United States politician's de facto campaign slogan in 2004.",
       "correct_answer": "George W. Bush",
       "incorrect_answers": ["John Kerry", "Barack Obama", "Al Gore"]
     },
@@ -2013,7 +2013,7 @@
       "type": "multiple",
       "difficulty": "medium",
       "category": "Politics",
-      "question": "Which of these is NOT one of Donald Trump&#039;s children?",
+      "question": "Which of these is NOT one of Donald Trump's children?",
       "correct_answer": "Julius",
       "incorrect_answers": ["Donald Jr.", "Ivanka", "Eric"]
     },
@@ -2045,7 +2045,7 @@
       "type": "multiple",
       "difficulty": "medium",
       "category": "Politics",
-      "question": "Which former US president used &quot;Let&#039;s Make America Great Again&quot; as his campaign slogan before Donald Trump&#039;s campaign?",
+      "question": "Which former US president used 'Let's Make America Great Again' as his campaign slogan before Donald Trump's campaign?",
       "correct_answer": "Ronald Reagan",
       "incorrect_answers": ["Jimmy Carter", "Gerald Ford", "Richard Nixon"]
     },
@@ -2081,7 +2081,7 @@
       "type": "multiple",
       "difficulty": "hard",
       "category": "Politics",
-      "question": "Which major bank&#039;s collapse was notable as one of the causes of the Financal Crisis of 2008?",
+      "question": "Which major bank's collapse was notable as one of the causes of the Financal Crisis of 2008?",
       "correct_answer": "Lehman Brothers",
       "incorrect_answers": ["HSBC", "Barclays", "Lloyds"]
     },
@@ -2109,7 +2109,7 @@
       "type": "multiple",
       "difficulty": "medium",
       "category": "Politics",
-      "question": "What is former United States President Bill Clinton&#039;s full name?",
+      "question": "What is former United States President Bill Clinton's full name?",
       "correct_answer": "William Jefferson Clinton",
       "incorrect_answers": [
         "William Roosevelt Clinton",
@@ -2121,19 +2121,19 @@
       "type": "multiple",
       "difficulty": "hard",
       "category": "Politics",
-      "question": "What is the name of Niccol&ograve; Machiavelli&#039;s work that argued effective leaders needed to crush their opponents at all costs?",
+      "question": "What is the name of Niccolo Machiavelli's work that argued effective leaders needed to crush their opponents at all costs?",
       "correct_answer": "The Prince",
       "incorrect_answers": [
         "The Rape of Lucrece",
         "Will to Power",
-        "Love&#039;s Labours Lost"
+        "Love's Labours Lost"
       ]
     },
     {
       "type": "multiple",
       "difficulty": "medium",
       "category": "Politics",
-      "question": "The 2014 movie &quot;The Raid 2: Berandal&quot; was mainly filmed in which Asian country?",
+      "question": "The 2014 movie 'The Raid 2: Berandal' was mainly filmed in which Asian country?",
       "correct_answer": "Indonesia",
       "incorrect_answers": ["Thailand", "Brunei", "Malaysia"]
     },

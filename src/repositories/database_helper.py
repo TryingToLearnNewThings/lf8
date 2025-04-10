@@ -2,19 +2,18 @@ import sqlite3
 
 
 class DatabaseHelper:
-    def __init__(self, db="Database/database.db", connection=None):
+    def __init__(self, db="./Database/database.db", connection=None):
+        # Connection is being established if none has been transferred
         if connection:
-            # Wenn eine Verbindung übergeben wird, nutze diese
             self.con = connection
         else:
-            # Andernfalls erstelle eine Verbindung zur Standard- oder angegebenen DB
             self.db_path = db
             self.con = sqlite3.connect(self.db_path)
 
-        # Cursor wird für Abfragen verwendet
+        # Cursor is used for queries
         self.cursor = self.con.cursor()
 
-    def get_value_from_table(self, table, column, condition_column, condition_value):
+    def Get_value_from_table(self, table, column, condition_column, condition_value):
 
         self.cursor.execute(
             f""" 
@@ -25,22 +24,22 @@ class DatabaseHelper:
         result = self.cursor.fetchall()
 
         if result:
-            # Falls nur eine Zeile mit einem Wert zurückgegeben wurde
+            # If only one line with a value was returned
             if len(result) == 1 and len(result[0]) == 1:
-                return result[0][0]  # Gibt den einzelnen Wert zurück
+                return result[0][0]  # Returns the single value
 
-            # Falls mehrere Zeilen zurückgegeben wurden, aber nur ein Tupel gewünscht ist
+            # If several lines were returned but only one tuple is required
             return tuple(result[0]) if len(result) == 1 else tuple(result)
 
-        return None  # Falls kein Wert gefunden wurde
+        return None  # If no value was found
 
-    def update_fieldValue(self, table, updateField, newValue, id, idField):
+    def Update_field_value(self, table, update_field, new_value, id, idField):
         self.cursor.execute(
-            f"""UPDATE {table} SET {updateField} = ? WHERE {idField} = ?""",
+            f"""UPDATE {table} SET {update_field} = ? WHERE {idField} = ?""",
             (
-                newValue,
+                new_value,
                 id,
             ),
         )
         self.con.commit()
-        return print(f"Bei Spieler {id} wurde {table,id} geupdatet")
+        return print(f"For Player {id}, {table, id} has been updated")
