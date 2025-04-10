@@ -1,6 +1,7 @@
 import tkinter as tk
 from repositories.player_repository import PlayerRepository
 
+
 def achievementScreen(player_repo):
     # Initialises the main window
     root = tk.Tk()

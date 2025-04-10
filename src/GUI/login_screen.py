@@ -1,10 +1,12 @@
 import tkinter as tk
 from tkinter import messagebox
-#from .entryScreen import entryScreen
+
+# from .entryScreen import entryScreen
 from .createacc_screen import createAccountScreen
 from repositories.player_repository import PlayerRepository
 
 player_repo = PlayerRepository()
+
 
 class Login_Class:
     def __init__(self):
@@ -12,7 +14,7 @@ class Login_Class:
         self.entry_password = None
         self.login_screen_window = None
         self.player_repo = None
-    
+
     def Login(self):
         username = self.entry_username.get()
         password = self.entry_password.get()
@@ -27,7 +29,8 @@ class Login_Class:
             messagebox.showerror("Error!", "Wrong Username or Password.")
 
     def Open_entryScreen(self):
-        from .entry_screen import entryScreen # to prevent a cycle
+        from .entry_screen import entryScreen  # to prevent a cycle
+
         self.login_screen_window.destroy()
         entryScreen(self.player_repo)
 
@@ -64,9 +67,9 @@ class Login_Class:
         self.entry_username.pack(pady=5)
 
         # Password
-        tk.Label(frame, text="Password:", font=label_font, fg="white", bg="#2e2e2e").pack(
-            pady=5
-        )
+        tk.Label(
+            frame, text="Password:", font=label_font, fg="white", bg="#2e2e2e"
+        ).pack(pady=5)
         self.entry_password = tk.Entry(
             frame, font=label_font, bg=entry_bg, fg=entry_fg, show="*", relief="flat"
         )

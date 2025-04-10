@@ -1,5 +1,6 @@
 import tkinter as tk
 
+
 def leaderboardScreen(player_repo):
     # Initialises the main window
     root = tk.Tk()
@@ -84,12 +85,14 @@ def leaderboardScreen(player_repo):
         bg="#444444",
         fg="#DDDDDD",
         relief="flat",
-        command=lambda: returnToEntryScreen(root,player_repo),  # Use a help function
+        command=lambda: returnToEntryScreen(root, player_repo),  # Use a help function
     ).pack(pady=20, ipadx=20, ipady=10)
 
     root.mainloop()
 
-def returnToEntryScreen(root,player_repo):
-    from .entry_screen import entryScreen 
+
+def returnToEntryScreen(root, player_repo):
+    from .entry_screen import entryScreen
+
     root.destroy()  # Closes the leaderboard window
     entryScreen(player_repo)  # Starts the entry screen
