@@ -43,3 +43,4 @@ class AchievmentRepository(DatabaseHelper):
         self.cursor.execute(""" SELECT * FROM Achievement""")
         rows = self.cursor.fetchall()
         return([row[0] for row in rows]),([row[2] for row in rows]),([row[3] for row in rows])
+
