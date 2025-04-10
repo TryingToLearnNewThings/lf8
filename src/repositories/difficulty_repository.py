@@ -9,22 +9,21 @@ class DifficultyRepository(DatabaseHelper):
         )  # Initialisiert die Verbindung über die Basisklasse
         self.question_id = None
 
-    def get_difficulty_infos(self, get_field, search_field, search_field_value):
-        return self.Get_value_from_table(
-            "Difficulty", get_field, search_field, search_field_value
-        )
+    
+    def get_difficulty_infos(self, get_field,search_field, search_field_value):
+        return self.Get_value_from_table("Difficulty", get_field, search_field, search_field_value)
+
 
     def Get_all_difficulties(self):
         self.cursor.execute("SELECT * FROM Difficulty")
         difficulties = self.cursor.fetchall()
 
-        # Mapping von Schwierigkeit zu Farben
-        color_map = {"easy": "green", "medium": "yellow", "hard": "red"}
+
+        color_map = {"easy": "green","medium": "yellow","hard": "red"}
 
         # Mapping zusammenbauen
-        difficulty_mapping = {
-            diff[0]: (diff[1], color_map.get(diff[1], "gray")) for diff in difficulties
-        }
+        difficulty_mapping = {diff[0]: (diff[1], color_map.get(diff[1], "gray")) for diff in difficulties}
+
 
         return difficulty_mapping
 
@@ -33,9 +32,6 @@ class DifficultyRepository(DatabaseHelper):
             """ 
         UPDATE Difficulty SET difficultyPoints = ? WHERE difficultyID = ?
         """,
-            (
-                new_points,
-                difficulty_id,
-            ),
+            (new_points,difficulty_id,),
         )
         self.con.commit()

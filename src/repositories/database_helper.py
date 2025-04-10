@@ -34,12 +34,6 @@ class DatabaseHelper:
         return None  # If no value was found
 
     def Update_field_value(self, table, update_field, new_value, id, idField):
-        self.cursor.execute(
-            f"""UPDATE {table} SET {update_field} = ? WHERE {idField} = ?""",
-            (
-                new_value,
-                id,
-            ),
-        )
+        self.cursor.execute(f"""UPDATE {table} SET {update_field} = ? WHERE {idField} = ?""",(new_value,id,),)
         self.con.commit()
         return print(f"For Player {id}, {table, id} has been updated")

@@ -112,11 +112,10 @@ class PlayerRepository(DatabaseHelper):
         # Conversion of the results into a dictionary
         achievements = []
         for achievement in results:
-            achievements.append(
-                {
-                    "name": achievement[0],  # Name of the Achievement
-                    "achieved": achievement[1] == "Achieved",  # Status als boolean
-                }
-            )
 
-        return achievements
+            achievements.append({"name": achievement[0], "achieved": achievement[1] == 'Achieved',})
+        
+        return achievements 
+    
+    
+

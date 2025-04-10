@@ -15,18 +15,6 @@ Dieses Projekt ist ein einfaches **Quiz-Spiel**, das es den Benutzern ermöglich
 
 Das Quiz-Spiel verwendet eine **SQLite**-Datenbank namens `database.db`. In dieser Datenbank sind die Fragen und ihre zugehörigen Kategorien gespeichert.
 
-### Tabellen in der Datenbank
-
-1. **Question**: Speichert die Fragen, die richtigen Antworten und die Kategorie-ID.
-    - `QuestionID` (Primärschlüssel)
-    - `QuestionText` (Frage)
-    - `CorrectAnswer` (Richtige Antwort)
-    - `CategoryID` (Fremdschlüssel zur Tabelle `Category`)
-
-2. **Category**: Speichert die verschiedenen Kategorien von Fragen.
-    - `CategoryID` (Primärschlüssel)
-    - `Name` (Kategorie-Name, z.B. "Politics", "Science")
-
 ## Funktionen
 
 ### 1. Fragen abfragen
