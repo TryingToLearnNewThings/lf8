@@ -17,15 +17,10 @@ class DifficultyRepository(DatabaseHelper):
         difficulties = self.cursor.fetchall()
 
         # Mapping von Schwierigkeit zu Farben
-        color_map = {
-            "easy": "green",
-            "medium": "yellow",
-            "hard": "red"
-        }
+        color_map = {"easy": "green","medium": "yellow","hard": "red"}
 
         # Mapping zusammenbauen
-        difficulty_mapping = {
-            diff[0]: (diff[1], color_map.get(diff[1], "gray")) for diff in difficulties}
+        difficulty_mapping = {diff[0]: (diff[1], color_map.get(diff[1], "gray")) for diff in difficulties}
 
         return difficulty_mapping
     

@@ -45,14 +45,7 @@ class QuestionRepository(DatabaseHelper):
         )  # fetchone(), as only one question is expected
 
         if row:
-            return {
-                "questionText": row[0],
-                "correctAnswer": row[1],
-                "incorrectAnswer1": row[2],
-                "incorrectAnswer2": row[3],
-                "incorrectAnswer3": row[4],
-                "difficultyID": row[5]
-            }
+            return {"questionText": row[0],"correctAnswer": row[1],"incorrectAnswer1": row[2],"incorrectAnswer2": row[3],"incorrectAnswer3": row[4],"difficultyID": row[5]}
         return None  # Returns None if no question was found
 
     def Get_correct_answer(self):
