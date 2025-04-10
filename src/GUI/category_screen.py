@@ -10,6 +10,7 @@ from .gameplay_screen import GameplayScreen
 
 category_repo = CategoryRepository()
 
+
 # player can choos a categry
 def categoryScreen(player_repo):
     root = tk.Tk()
@@ -20,7 +21,7 @@ def categoryScreen(player_repo):
     # Fonts and colours
     label_font = ("Helvetica", 16, "bold")
     btn_font = ("Helvetica", 14, "bold")
-    btn_bg = "#444444"  
+    btn_bg = "#444444"
     btn_fg = "#DDDDDD"
 
     # Frame for complete centring
@@ -59,14 +60,13 @@ def Start_gameplay(root, selected_category, player_repo):
     Startet den GameplayScreen basierend auf der ausgewählten Kategorie.
     """
     print(f"Ausgewählte Kategorie: {selected_category}")
-    
+
     # Gets the category ID based on the name
     category_id = category_repo.Get_category_id_by_name(selected_category)
     print(f"Category ID: {category_id}")
-    
+
     # Closes the category screen
     root.destroy()
-    
-    # Starts the gameplay screen with the category ID
-    GameplayScreen(category_id=category_id, player_repo = player_repo)
 
+    # Starts the gameplay screen with the category ID
+    GameplayScreen(category_id=category_id, player_repo=player_repo)

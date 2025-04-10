@@ -78,6 +78,7 @@ def entryScreen(player_repo):
 
     main_screen.mainloop()
 
+
 # Closes entry screen and opens achievement screen
 def openAchievementScreen(player_repo):
     main_screen.destroy()

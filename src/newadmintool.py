@@ -100,8 +100,12 @@ class AdminTool:
             if self.current_question:
                 question_text = self.current_question["questionText"]
                 answers = self.current_question["answers"]
-                correct_answer = answers[0]["answerText"]  # Correct answer is always the first
-                incorrect_answers = [a["answerText"] for a in answers[1:]]  # Remaining are incorrect
+                correct_answer = answers[0][
+                    "answerText"
+                ]  # Correct answer is always the first
+                incorrect_answers = [
+                    a["answerText"] for a in answers[1:]
+                ]  # Remaining are incorrect
 
                 result_text = (
                     f"Frage: {question_text}\n\n"
@@ -175,7 +179,9 @@ class AdminTool:
         ).pack(pady=10)
 
         answer_entries = []
-        correct_answer_var = tk.IntVar(value=1)  # Default correct answer is the first one
+        correct_answer_var = tk.IntVar(
+            value=1
+        )  # Default correct answer is the first one
 
         for i, answer in enumerate(self.current_question["answers"], start=1):
             frame = tk.Frame(editor, bg="#2e2e2e")
@@ -254,7 +260,9 @@ class AdminTool:
         ).pack(pady=10)
 
         answer_entries = []
-        correct_answer_var = tk.IntVar(value=1)  # Default correct answer is the first one
+        correct_answer_var = tk.IntVar(
+            value=1
+        )  # Default correct answer is the first one
 
         for i in range(4):  # Four answers
             frame = tk.Frame(create_window, bg="#2e2e2e")
@@ -345,7 +353,9 @@ class AdminTool:
             ),
         ).pack(pady=20, ipadx=20, ipady=10)
 
-    def save_new_question(self, question_text, answers, correct_answer_index, category_id, difficulty_id):
+    def save_new_question(
+        self, question_text, answers, correct_answer_index, category_id, difficulty_id
+    ):
         """Saves the new question to the database."""
         try:
             if not question_text or not all(answers) or correct_answer_index == 0:
@@ -357,9 +367,15 @@ class AdminTool:
                 category_id=category_id,
                 difficulty_id=difficulty_id,
                 correct_answer=answers[correct_answer_index - 1],
-                incorrect_answer1=answers[0] if correct_answer_index != 1 else answers[1],
-                incorrect_answer2=answers[1] if correct_answer_index != 2 else answers[2],
-                incorrect_answer3=answers[2] if correct_answer_index != 3 else answers[3],
+                incorrect_answer1=(
+                    answers[0] if correct_answer_index != 1 else answers[1]
+                ),
+                incorrect_answer2=(
+                    answers[1] if correct_answer_index != 2 else answers[2]
+                ),
+                incorrect_answer3=(
+                    answers[2] if correct_answer_index != 3 else answers[3]
+                ),
             )
             messagebox.showinfo("Erfolg", "Die Frage wurde erfolgreich erstellt.")
         except Exception as e:
