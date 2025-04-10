@@ -1,15 +1,13 @@
 import tkinter as tk
-from repositories.player_repository import PlayerRepository
 
-
-def leaderboard_screen():
-    # Initialisiere das Hauptfenster
+def leaderboardScreen(player_repo):
+    # Initialises the main window
     root = tk.Tk()
     root.title("Leaderboard")
     root.geometry("800x600")
     root.configure(bg="#2e2e2e")
 
-    # Überschrift
+    # Headline
     tk.Label(
         root,
         text="Leaderboard",
@@ -18,14 +16,14 @@ def leaderboard_screen():
         bg="#2e2e2e",
     ).pack(pady=20)
 
-    # Tabelle für das Leaderboard
+    # Table for the leaderboard
     leaderboard_frame = tk.Frame(root, bg="#2e2e2e")
     leaderboard_frame.pack(pady=20)
 
-    # Spaltenüberschriften
+    # Column headline
     tk.Label(
         leaderboard_frame,
-        text="Platz",
+        text="Placement",
         font=("Helvetica", 16, "bold"),
         fg="white",
         bg="#2e2e2e",
@@ -41,18 +39,17 @@ def leaderboard_screen():
     ).grid(row=0, column=1)
     tk.Label(
         leaderboard_frame,
-        text="Punkte",
+        text="Points",
         font=("Helvetica", 16, "bold"),
         fg="white",
         bg="#2e2e2e",
         width=10,
     ).grid(row=0, column=2)
 
-    # Spieler-Daten aus der Datenbank abrufen
-    player_repo = PlayerRepository()
-    players = player_repo.get_all_players_sorted_by_score()
+    # Retrieve player data from the database
+    players = player_repo.Get_all_players_sorted_by_score()
 
-    # Spieler in der Tabelle anzeigen
+    # Shows player in the table
     for index, player in enumerate(players):
         tk.Label(
             leaderboard_frame,
@@ -79,15 +76,20 @@ def leaderboard_screen():
             width=10,
         ).grid(row=index + 1, column=2)
 
-    # Button zum Hauptmenü
+    # Button to the main menu
     tk.Button(
         root,
-        text="Zurück zum Hauptmenü",
+        text="Back to Mainscreen",
         font=("Helvetica", 14, "bold"),
         bg="#444444",
         fg="#DDDDDD",
         relief="flat",
-        command=root.destroy,
+        command=lambda: returnToEntryScreen(root,player_repo),  # Use a help function
     ).pack(pady=20, ipadx=20, ipady=10)
 
     root.mainloop()
+
+def returnToEntryScreen(root,player_repo):
+    from .entry_screen import entryScreen 
+    root.destroy()  # Closes the leaderboard window
+    entryScreen(player_repo)  # Starts the entry screen

@@ -3,60 +3,38 @@ from repositories.database_helper import DatabaseHelper
 
 
 class QuestionRepository(DatabaseHelper):
-
+    
     def __init__(self, connection=None):
-        super().__init__(
-            connection=connection
-        )  # Initialisiert die Verbindung über die Basisklasse
+        # Initialises the connection via the base class
+        super().__init__(connection=connection)  
         self.question_id = None
+        self.connection = connection
 
-    def get_questionIDs_with_Categorys(self, categoryid):
-        """
-        Holt alle Frage-IDs für eine bestimmte Kategorie.
-        """
+    def Get_questionids_with_categorys(self, category_id):
+        
         self.cursor.execute(
-            """ 
-        SELECT q.questionID
-        FROM Question q
-        JOIN Category c ON q.categoryID = c.categoryID
-        WHERE c.categoryID = ?
-        """,
-            (categoryid,),
+            """
+            SELECT questionID
+            FROM Question
+            WHERE categoryID = ?
+            """,
+            (category_id,),
         )
-
         rows = self.cursor.fetchall()
-        questionids = [row[0] for row in rows]
-        return questionids
+        return [row[0] for row in rows]
 
-    # def fill_game_question(self, questionids, gameid):
-    #     """
-    #     Füllt die Tabelle GameQuestion mit den Frage-IDs für ein bestimmtes Spiel.
-    #     """
-    #     for questions in questionids:
-    #         self.cursor.execute(
-    #             """
-    #         INSERT INTO GameQuestion(gameID, questionID, played) VALUES (?, ?, 0)
-    #         """,
-    #             (
-    #                 gameid,
-    #                 questions,
-    #             ),
-    #         )
-    #     self.con.commit()
-
-    def get_random_questionID(self, questionIDs):
-
-        self.question_id = random.choice(questionIDs)
-        questionIDs.remove(self.question_id)
+    def Get_random_questionID(self, question_ids):
+        self.question_id = random.choice(question_ids)
         return self.question_id
+        
 
-    def get_question(self):
+    def Get_question(self):
         """
-        Holt die Frage und die dazugehörigen Antworten aus der Datenbank.
+        Retrieves the question and the corresponding answers from the database.
         """
         self.cursor.execute(
             """ 
-        SELECT question, correctAnswer, incorrectAnswers1, incorrectAnswers2, incorrectAnswers3
+        SELECT question, correctAnswer, incorrectAnswers1, incorrectAnswers2, incorrectAnswers3, difficultyID
         FROM Question
         WHERE questionID = ?
         """,
@@ -64,7 +42,7 @@ class QuestionRepository(DatabaseHelper):
         )
         row = (
             self.cursor.fetchone()
-        )  # Verwende fetchone(), da nur eine Frage erwartet wird
+        )  # fetchone(), as only one question is expected
 
         if row:
             return {
@@ -73,13 +51,11 @@ class QuestionRepository(DatabaseHelper):
                 "incorrectAnswer1": row[2],
                 "incorrectAnswer2": row[3],
                 "incorrectAnswer3": row[4],
+                "difficultyID": row[5]
             }
-        return None  # Gibt None zurück, wenn keine Frage gefunden wurde
+        return None  # Returns None if no question was found
 
-    def get_correct_answer(self):
-        """
-        Holt die korrekte Antwort für eine bestimmte Frage-ID.
-        """
+    def Get_correct_answer(self):
         self.cursor.execute(
             """ 
         SELECT correctAnswer FROM Question WHERE questionID = ?
@@ -90,89 +66,98 @@ class QuestionRepository(DatabaseHelper):
 
         return row[0] if row else None
 
-    def create_question(
-        self,
-        question,
-        categoryID,
-        difficultyID,
-        correctAnswer,
-        incorrectAnswer1,
-        incorrectAnswer2,
-        incorrectAnswer3,
-    ):
-        """
-        Erstellt eine neue Frage in der Datenbank.
-        """
+    def Create_question(self, question, category_id, difficulty_id, correct_answer, incorrect_answer1, incorrect_answer2, incorrect_answer3):
+        """Fügt eine neue Frage in die Datenbank ein."""
         self.cursor.execute(
-            """ 
-        INSERT INTO Question(question, categoryID, difficultyID, correctAnswer, incorrectAnswers1, incorrectAnswers2, incorrectAnswers3) 
-        VALUES (?, ?, ?, ?, ?, ?, ?)
-        """,
-            (
-                question,
-                categoryID,
-                difficultyID,
-                correctAnswer,
-                incorrectAnswer1,
-                incorrectAnswer2,
-                incorrectAnswer3,
-            ),
+            """
+            INSERT INTO Question (question, categoryID, difficultyID, correctAnswer, incorrectAnswers1, incorrectAnswers2, incorrectAnswers3)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+            """,
+            (question, category_id, difficulty_id, correct_answer, incorrect_answer1, incorrect_answer2, incorrect_answer3),
         )
-        self.con.commit()
+        self.connection.commit()
 
         return "Question created! :)"
 
-    def question_played(self, gameID, played):
-        self.cursor.execute(
-            f"""UPDATE GameQuestion SET played = ? WHERE questionID = ? and gameID = ? """,
-            (
-                played,
-                self.question_id,
-                gameID,
-            ),
-        )
-        self.con.commit()
+    def Get_question_by_id(self, question_id):
+        
+        # Query for the question and the answers
+        self.cursor.execute("""
+            SELECT question, correctAnswer, incorrectAnswers1, incorrectAnswers2, incorrectAnswers3
+            FROM Question
+            WHERE questionID = ?""", (question_id,))
+        question_row = self.cursor.fetchone()
 
-    def update_question(
-        self, questionID, inputField, userChange
-    ):  # hier wird eine beliebe QuestionID übergeben, deswegen kein self.question_id.
-        # updatet die ausgwählte frage, mit dem Übergebenden Werten
-        self.update_fieldValue(
-            "Question", inputField, userChange, questionID, "questionID"
-        )
+        if not question_row:
+            return None
 
-    def delete_question(
-        self, questionID
-    ):  # hier wird eine beliebe QuestionID übergeben, deswegen kein self.question_id.
+        # Extracting the answers
+        answers = [
+            {"answerText": question_row[1], "isCorrect": 1},  # Correct Answer
+            {"answerText": question_row[2], "isCorrect": 0},  # False Answer 1
+            {"answerText": question_row[3], "isCorrect": 0},  # False Answer 2
+            {"answerText": question_row[4], "isCorrect": 0},  # False Answer 3
+        ]
+
+        return {
+            "questionText": question_row[0],
+            "correctAnswerIndex": 1,  # The correct answer always comes first
+            "answers": answers,
+        }
+    
+    def Update_question(self, questionID, question_text=None, answers=None, correct_answer_index=None):
+        try:
+            if question_text:
+                self.cursor.execute(
+                    "UPDATE Question SET question = ? WHERE questionID = ?",
+                    (question_text, questionID),
+                )
+
+            if answers and correct_answer_index is not None:
+                # Update the answers
+                self.cursor.execute(
+                    """
+                    UPDATE Question
+                    SET correctAnswer = ?, incorrectAnswers1 = ?, incorrectAnswers2 = ?, incorrectAnswers3 = ?
+                    WHERE questionID = ?
+                    """,
+                    (
+                        answers[correct_answer_index - 1],  # Korrekte Antwort
+                        answers[0] if correct_answer_index != 1 else answers[1],  # First False Answer
+                        answers[1] if correct_answer_index != 2 else answers[2],  # Second False Answer
+                        answers[2] if correct_answer_index != 3 else answers[3],  # Third False Answer
+                        questionID,
+                    ),
+                )
+
+            self.con.commit()
+            return "Question successfully updated!"
+        except Exception as e:
+            raise Exception(f"Error updating the question: {e}")
+
+    def Delete_question(self, question_id):
         """
-        Löscht eine Frage aus der Datenbank.
+        Deletes a question from the question table based on the question ID.
         """
-        self.cursor.execute(
-            """DELETE FROM Question WHERE questionID = ?""", (questionID,)
-        )
-        self.con.commit()
+        try:
+            self.cursor.execute(
+                """
+                DELETE FROM Question
+                WHERE questionID = ?
+                """,
+                (question_id,),
+            )
+            self.connection.commit()
+        except Exception as e:
+            raise Exception(f"Error deleting the question: {e}")
 
-    def fill_right_or_wrong(self, playerID, gameID, right):
-        """
-        Füllt die Tabelle RightOrWrong mit den Spielerantworten.
-        """
-        self.cursor.execute(
-            """INSERT INTO RightOrWrong(playerID,gameID,questionID,answerCorrectly) VALUES(?,?,?,?)""",
-            (playerID, gameID, self.question_id, right),
+    def Get_question_points(self, question_id):
+        cursor = self.con.cursor()
+        cursor.execute(
+            "SELECT difficultyPoints FROM Difficulty WHERE difficultyID = (SELECT difficultyID FROM Question WHERE questionID = ?)",
+            (question_id,),
         )
-        self.con.commit()
-        return
+        result = cursor.fetchone()
+        return result[0] if result else None
 
-    def get_question_points(self):
-        # Holt die Punkte für eine bestimmte Frage basierend auf der Schwierigkeit.
-        self.cursor.execute(
-            """ SELECT d.difficultyID, d.difficultyPoints
-                FROM Difficulty d
-                JOIN Question q ON d.difficultyID = q.difficultyID
-                WHERE q.questionID = ?
-            """,
-            (self.question_id,),
-        )
 
-        rows = self.cursor.fetchone()
-        return rows

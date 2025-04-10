@@ -1,87 +1,84 @@
 import tkinter as tk
 from tkinter import ttk
-from category_screen import category_screen
-from achievement_screen import achievement_screen
-from helper_screen import helper_screen
+from .category_screen import categoryScreen
+from .achievement_screen import achievementScreen
+from .helper_screen import helperScreen
 
 
-# Funktion, um die Kategorieauswahl zu öffnen
-# Schließt Entry-screen und startet Kategorieauswahl-screen
-def open_category_screen():
+# Function to open the category selection
+# Closes entry screen and starts category selection screen
+def openCategoryScreen(player_repo):
     main_screen.destroy()
-    category_screen()
+    categoryScreen(player_repo)
 
 
-# Hauptbildschirm (Entry Screen)
-def entry_screen():
+# Main screen (Entry Screen)
+def entryScreen(player_repo):
     global main_screen
     main_screen = tk.Tk()
-    main_screen.title("Hauptmenü")
+    main_screen.title("Mainmenu")
     main_screen.geometry("1200x800")
-    main_screen.configure(bg="#2e2e2e")  # Standard-Hintergrundfarbe
+    main_screen.configure(bg="#2e2e2e")
 
-    # Schriftarten und Farben
+    # Fonts and colours
     label_font = ("Helvetica", 16, "bold")
     btn_font = ("Helvetica", 14, "bold")
-    btn_bg = "#444444"  # Dunkleres Grau für Buttons
-    btn_fg = "#DDDDDD"  # Hellgrauer Text
+    btn_bg = "#444444"
+    btn_fg = "#DDDDDD"
 
-    # Frame zum vollständigen Zentrieren
+    # Frame for complete centring
     frame = tk.Frame(main_screen, bg="#2e2e2e")
     frame.place(relx=0.5, rely=0.5, anchor="center")
 
-    # Titel-Label
+    # Title-Label
     tk.Label(
         frame,
-        text="Willkommen im Quiz-Spiel!",
+        text="Welcome to our Quizgame!",
         font=label_font,
         fg="white",
         bg="#2e2e2e",
     ).pack(pady=20)
 
-    # Button zur Kategorieauswahl
+    # Button for category selection
     tk.Button(
         frame,
-        text="Kategorie auswählen",
+        text="Start Game",
         font=btn_font,
         bg=btn_bg,
         fg=btn_fg,
         relief="flat",
-        command=open_category_screen,
+        command=lambda: openCategoryScreen(player_repo),
     ).pack(pady=10, ipadx=20, ipady=10)
 
-    # Button zu den Achievements
+    # Button to the achievements
     tk.Button(
         frame,
-        text="Achievements anzeigen",
+        text="My Achievements",
         font=btn_font,
         bg=btn_bg,
         fg=btn_fg,
         relief="flat",
-        command=open_achievement_screen,
+        command=lambda: openAchievementScreen(player_repo),
     ).pack(pady=10, ipadx=20, ipady=10)
 
     # Button for the helper screen in the bottom-right corner
     help_button = tk.Button(
         main_screen,
-        text="Hilfe",
+        text="Help",
         font=btn_font,
         bg=btn_bg,
         fg=btn_fg,
         relief="flat",
-        command=helper_screen,  # Open the helper screen
+        command=helperScreen,  # Opens the helper screen
     )
-    help_button.place(
-        relx=1.0, rely=1.0, anchor="se", x=-20, y=-20
-    )  # Bottom-right corner with padding
+    help_button.place(relx=1.0, rely=1.0, anchor="se", x=-20, y=-20)
 
-    # Bind the "h" key to open the helper screen
-    main_screen.bind("h", lambda event: helper_screen())
+    # Binds the "h" key to open the helper screen
+    main_screen.bind("h", lambda event: helperScreen())
 
     main_screen.mainloop()
 
-
-# Schhließt Entry-screen und öffnet Achievement-screen
-def open_achievement_screen():
+# Closes entry screen and opens achievement screen
+def openAchievementScreen(player_repo):
     main_screen.destroy()
-    achievement_screen()
+    achievementScreen(player_repo)

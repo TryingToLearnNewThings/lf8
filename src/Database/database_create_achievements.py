@@ -1,11 +1,11 @@
 import sqlite3
 
 con = sqlite3.connect("Database/database.db")
-# Cursor-Objekt zum Ausführen von SQL-Befehlen
+# Cursor object for executing SQL commands
 cursor = con.cursor()
 
 
-# Achievements in die Tabelle einpflegen
+# Add Achievements to the table
 cursor.execute(
     """INSERT INTO Achievement (achievementName, conditionType, value) VALUES ("Get 10 hard questions correct", "correctHardQuestions", 10) """
 )
@@ -15,6 +15,6 @@ cursor.execute(
 cursor.execute(
     """INSERT INTO Achievement (achievementName, conditionType, value) VALUES ("Get 10 easy questions correct", "correctEasyQuestions", 10) """
 )
-# Änderungen speichern und Verbindung schließen
+# Save changes and close connection
 con.commit()
 con.close()

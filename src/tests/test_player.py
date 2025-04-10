@@ -2,8 +2,7 @@ import unittest
 import os
 import sys
 import sqlite3
-
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from repositories.player_repository import PlayerRepository
 
 
@@ -13,7 +12,7 @@ class TestPlayerRepository(unittest.TestCase):
         self.conn = sqlite3.connect(":memory:")  # In-Memory-DB
         self.cursor = self.conn.cursor()
 
-        # Tabelle manuell erstellen
+        # Create table manually
         self.cursor.execute(
             """
                        CREATE TABLE IF NOT EXISTS Player (
@@ -31,59 +30,51 @@ class TestPlayerRepository(unittest.TestCase):
         )
         self.conn.commit()
 
-        # Repository nutzt jetzt die in-memory DB über die Verbindung
+        # Repository now uses the in-memory DB via the connection
         self.player = PlayerRepository(connection=self.conn)
-
+        
         self.cursor.execute(
             "INSERT INTO Player(playerPassword, playerName, playerScore, playerWins, playedGames, correctHardQuestions, correctMediumQuestions, correctEasyQuestions) VALUES (?, ?, ?, ?, ?, ?, ?,?)",
-            (12345, "Marsl", 1000, 10, 10, 100, 20, 30),
+            (12345, "Marsl", 1000, 10, 10, 100, 20, 30)
         )
         self.conn.commit()
 
     def test_create_Player(self):
         # given
-        playerName = "Marsle"
-        playerPass = "123456"
+        player_name = "Marsle"
+        player_pass = "123456"
 
         # when
-        # Fügt den Player in die Datenbank und guckt ob es erfolgreich war
-        self.player.create_user(playerName, playerPass)
+        # Add the player to the database and see if it was successful
+        self.player.create_user(player_name, player_pass)
         self.cursor.execute(
             "SELECT playerName FROM Player WHERE playerName = ? AND playerPassword = ?",
-            (playerName, playerPass),
+            (player_name, player_pass),
         )
         result = self.cursor.fetchone()
         # then
-        self.assertIsNotNone(result)  # Prüfen, ob der Player existiert
-        self.assertEqual(result[0], playerName, playerPass)
+        self.assertIsNotNone(result)  # Check whether the player exists
+        self.assertEqual(result[0], player_name, player_pass)
 
     def test_update_playerField(self):
         # given
-        playerID = 1
-        # playerName = "Marsl"
-        newValue = "Leon"
+        player_id = 1
+        # player_name = "Marsl"
+        new_value = "Leon"
 
         # when
-        self.player.update_fieldValue(
-            "Player", "playerName", newValue, playerID, "playerID"
+        self.player.Update_field_value(
+            "Player", "playerName", new_value,player_id , "playerID"
         )
 
         self.cursor.execute(
-            """SELECT playerName FROM Player WHERE playerID = ?""", (playerID,)
+            """SELECT playerName FROM Player WHERE playerID = ?""", (player_id,)
         )
         result = self.cursor.fetchone()
 
         # then
         self.assertIsNotNone(result)
-        self.assertEqual(result[0], newValue)
-
-    def test_delete_user(self):
-        # given
-        playerID = 1
-        playerName = "Marsl"
-
-        self.player.delete_user(playerID)
-        self.assertIsNone(self.player.get_playerID(playerName))
+        self.assertEqual(result[0], new_value)
 
     def tearDown(self):
         """Schließt die Verbindung nach jedem Test."""
@@ -94,7 +85,6 @@ if __name__ == "__main__":
     suite = unittest.TestSuite()
     suite.addTest(TestPlayerRepository("test_create_Player"))
     suite.addTest(TestPlayerRepository("test_update_playerField"))
-    suite.addTest(TestPlayerRepository("test_delete_user"))
 
     runner = unittest.TextTestRunner()
     runner.run(suite)

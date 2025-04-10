@@ -1,45 +1,45 @@
 import sqlite3
 import json
 
-# Verbindung zur SQLite-Datenbank
+# Connection to the SQLite database
 conn = sqlite3.connect("Database/database.db")
 cursor = conn.cursor()
 
-# JSON-Datei laden
+# Load JSON file
 with open("Database/test_fragen.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
-# Category und Difficulty zwischenspeichern (damit IDs nicht doppelt gespeichert werden)
+# Cache Category and Difficulty (so that IDs are not saved twice)
 category_cache = {}
 difficulty_cache = {}
 
-# JSON-Daten durchgehen
+# Go through JSON data
 for entry in data["results"]:
     category_name = entry["category"]
     difficulty_name = entry["difficulty"]
 
-    # Kategorie einfügen (falls noch nicht vorhanden)
+    # Insert category
     if category_name not in category_cache:
         cursor.execute(
             "INSERT OR IGNORE INTO Category (categoryName) VALUES (?)", (category_name,)
         )
         category_cache[category_name] = cursor.lastrowid
 
-    # Schwierigkeitsgrad einfügen (falls noch nicht vorhanden)
+    # Insert difficulty
     if difficulty_name not in difficulty_cache:
         if difficulty_name == "easy":
-            Points = 1
+            Points = 1000
         elif difficulty_name == "medium":
-            Points = 2
+            Points = 1500
         else:
-            Points = 3
+            Points = 2000
         cursor.execute(
             "INSERT OR IGNORE INTO Difficulty (difficultyName, difficultyPoints) VALUES (?, ?)",
             (difficulty_name, Points),
-        )  # Punkte anpassen
+        )  # Adjust points
         difficulty_cache[difficulty_name] = cursor.lastrowid
 
-    # Kategorie- und Schwierigkeits-ID abrufen
+    # Retrieve category and difficulty ID
     cursor.execute(
         "SELECT CategoryID FROM Category WHERE categoryName = ?", (category_name,)
     )
@@ -51,7 +51,7 @@ for entry in data["results"]:
     )
     difficulty_id = cursor.fetchone()[0]
 
-    # Frage in die Datenbank einfügen
+    # Insert question into the database
     incorrects = entry["incorrect_answers"]
     cursor.execute(
         """
@@ -69,8 +69,8 @@ for entry in data["results"]:
         ),
     )
 
-# Änderungen speichern und Verbindung schließen
+# Save changes and close connection
 conn.commit()
 conn.close()
 
-print("✅ JSON-Daten erfolgreich in SQLite gespeichert!")
+print("✅ JSON data successfully saved in SQLite!")
