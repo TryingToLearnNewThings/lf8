@@ -2,11 +2,13 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 from repositories.player_repository import PlayerRepository
 import sqlite3
+
 # from GUI.login_screen import Login
 player_repo = PlayerRepository()
 
+
 def createAccountScreen():
-    
+
     def createAccount():
         username = entry_username.get()
         password = entry_password.get()
@@ -20,8 +22,10 @@ def createAccountScreen():
             messagebox.showerror("Error", "Passwords do not match")
             return
 
-        player_name_taken =player_repo.Get_value_from_table("Player","*","playerName", username)
-        
+        player_name_taken = player_repo.Get_value_from_table(
+            "Player", "*", "playerName", username
+        )
+
         # Database connection for the creation of a new account
         # con = sqlite3.connect("./Database/database.db")
         # cursor = con.cursor()
@@ -31,12 +35,10 @@ def createAccountScreen():
             messagebox.showerror("Error", "Username is already taken")
             return
 
-        player_repo.create_user(username,password)
+        player_repo.create_user(username, password)
 
         messagebox.showinfo("Success", "Account created successfully")
         createacc_window.destroy()
-
-
 
     createacc_window = tk.Tk()
     createacc_window.title("Create Account")
@@ -56,9 +58,9 @@ def createAccountScreen():
     frame.place(relx=0.5, rely=0.5, anchor="center")
 
     # Username
-    tk.Label(
-        frame, text="Username:", font=label_font, fg="white", bg="#2e2e2e"
-    ).pack(pady=5)
+    tk.Label(frame, text="Username:", font=label_font, fg="white", bg="#2e2e2e").pack(
+        pady=5
+    )
     entry_username = tk.Entry(
         frame, font=label_font, bg=entry_bg, fg=entry_fg, relief="flat"
     )
@@ -95,5 +97,3 @@ def createAccountScreen():
     btn_create.pack(pady=10, ipadx=20, ipady=10)
 
     createacc_window.mainloop()
-
-

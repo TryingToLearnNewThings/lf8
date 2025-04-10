@@ -3,15 +3,15 @@ from repositories.database_helper import DatabaseHelper
 
 
 class QuestionRepository(DatabaseHelper):
-    
+
     def __init__(self, connection=None):
         # Initialises the connection via the base class
-        super().__init__(connection=connection)  
+        super().__init__(connection=connection)
         self.question_id = None
         self.connection = connection
 
     def Get_questionids_with_categorys(self, category_id):
-        
+
         self.cursor.execute(
             """
             SELECT questionID
@@ -26,7 +26,6 @@ class QuestionRepository(DatabaseHelper):
     def Get_random_questionID(self, question_ids):
         self.question_id = random.choice(question_ids)
         return self.question_id
-        
 
     def Get_question(self):
         """
@@ -40,9 +39,7 @@ class QuestionRepository(DatabaseHelper):
         """,
             (self.question_id,),
         )
-        row = (
-            self.cursor.fetchone()
-        )  # fetchone(), as only one question is expected
+        row = self.cursor.fetchone()  # fetchone(), as only one question is expected
 
         if row:
             return {
@@ -51,7 +48,7 @@ class QuestionRepository(DatabaseHelper):
                 "incorrectAnswer1": row[2],
                 "incorrectAnswer2": row[3],
                 "incorrectAnswer3": row[4],
-                "difficultyID": row[5]
+                "difficultyID": row[5],
             }
         return None  # Returns None if no question was found
 
@@ -66,26 +63,46 @@ class QuestionRepository(DatabaseHelper):
 
         return row[0] if row else None
 
-    def Create_question(self, question, category_id, difficulty_id, correct_answer, incorrect_answer1, incorrect_answer2, incorrect_answer3):
+    def Create_question(
+        self,
+        question,
+        category_id,
+        difficulty_id,
+        correct_answer,
+        incorrect_answer1,
+        incorrect_answer2,
+        incorrect_answer3,
+    ):
         """Fügt eine neue Frage in die Datenbank ein."""
         self.cursor.execute(
             """
             INSERT INTO Question (question, categoryID, difficultyID, correctAnswer, incorrectAnswers1, incorrectAnswers2, incorrectAnswers3)
             VALUES (?, ?, ?, ?, ?, ?, ?)
             """,
-            (question, category_id, difficulty_id, correct_answer, incorrect_answer1, incorrect_answer2, incorrect_answer3),
+            (
+                question,
+                category_id,
+                difficulty_id,
+                correct_answer,
+                incorrect_answer1,
+                incorrect_answer2,
+                incorrect_answer3,
+            ),
         )
         self.connection.commit()
 
         return "Question created! :)"
 
     def Get_question_by_id(self, question_id):
-        
+
         # Query for the question and the answers
-        self.cursor.execute("""
+        self.cursor.execute(
+            """
             SELECT question, correctAnswer, incorrectAnswers1, incorrectAnswers2, incorrectAnswers3
             FROM Question
-            WHERE questionID = ?""", (question_id,))
+            WHERE questionID = ?""",
+            (question_id,),
+        )
         question_row = self.cursor.fetchone()
 
         if not question_row:
@@ -104,8 +121,10 @@ class QuestionRepository(DatabaseHelper):
             "correctAnswerIndex": 1,  # The correct answer always comes first
             "answers": answers,
         }
-    
-    def Update_question(self, questionID, question_text=None, answers=None, correct_answer_index=None):
+
+    def Update_question(
+        self, questionID, question_text=None, answers=None, correct_answer_index=None
+    ):
         try:
             if question_text:
                 self.cursor.execute(
@@ -123,9 +142,15 @@ class QuestionRepository(DatabaseHelper):
                     """,
                     (
                         answers[correct_answer_index - 1],  # Korrekte Antwort
-                        answers[0] if correct_answer_index != 1 else answers[1],  # First False Answer
-                        answers[1] if correct_answer_index != 2 else answers[2],  # Second False Answer
-                        answers[2] if correct_answer_index != 3 else answers[3],  # Third False Answer
+                        (
+                            answers[0] if correct_answer_index != 1 else answers[1]
+                        ),  # First False Answer
+                        (
+                            answers[1] if correct_answer_index != 2 else answers[2]
+                        ),  # Second False Answer
+                        (
+                            answers[2] if correct_answer_index != 3 else answers[3]
+                        ),  # Third False Answer
                         questionID,
                     ),
                 )
@@ -159,5 +184,3 @@ class QuestionRepository(DatabaseHelper):
         )
         result = cursor.fetchone()
         return result[0] if result else None
-
-

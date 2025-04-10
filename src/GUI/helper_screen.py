@@ -12,8 +12,8 @@ def helperScreen():
     label_font = ("Helvetica", 16, "bold")
     text_font = ("Helvetica", 14)
     btn_font = ("Helvetica", 14, "bold")
-    btn_bg = "#444444" 
-    btn_fg = "#DDDDDD" 
+    btn_bg = "#444444"
+    btn_fg = "#DDDDDD"
 
     # Title
     tk.Label(

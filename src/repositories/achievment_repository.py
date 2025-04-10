@@ -7,16 +7,18 @@ class AchievmentRepository(DatabaseHelper):
         return self.Get_value_from_table(
             "Achievement", "achievementName", "achievementID", achievement_id
         )
-    
+
     # Connects the player to his achievements
     def Fill_player_to_achievments(
-        self, player_id, achievement_id,
+        self,
+        player_id,
+        achievement_id,
     ):
         for i in achievement_id:
             self.cursor.execute(
-                    """INSERT INTO PlayerToAchievement(playerID,achievementID) VALUES (?,?) """,
-                    (player_id, i),
-                )
+                """INSERT INTO PlayerToAchievement(playerID,achievementID) VALUES (?,?) """,
+                (player_id, i),
+            )
             self.con.commit()
             print("You have achieved a new achievements")
 
@@ -26,8 +28,6 @@ class AchievmentRepository(DatabaseHelper):
             (achievement_name, condition_type, value),
         )
         self.con.commit()
-        
-   
 
     # Gets the requirement to fulfil the Achievements
     def Get_requierments(self, achievement_id):
@@ -36,11 +36,12 @@ class AchievmentRepository(DatabaseHelper):
         )
         print(requierments)
         return requierments
-    
-    
-    
+
     def Get_all_achievements(self):
         self.cursor.execute(""" SELECT * FROM Achievement""")
         rows = self.cursor.fetchall()
-        return([row[0] for row in rows]),([row[2] for row in rows]),([row[3] for row in rows])
-
+        return (
+            ([row[0] for row in rows]),
+            ([row[2] for row in rows]),
+            ([row[3] for row in rows]),
+        )
