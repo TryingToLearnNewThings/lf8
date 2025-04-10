@@ -8,8 +8,7 @@ class DifficultyRepository(DatabaseHelper):
         self.question_id = None
     
     def get_difficulty_infos(self, get_field,search_field, search_field_value):
-        return self.Get_value_from_table(
-            "Difficulty", get_field, search_field, search_field_value)
+        return self.Get_value_from_table("Difficulty", get_field, search_field, search_field_value)
 
     
     def Get_all_difficulties(self):
@@ -30,9 +29,6 @@ class DifficultyRepository(DatabaseHelper):
             """ 
         UPDATE Difficulty SET difficultyPoints = ? WHERE difficultyID = ?
         """,
-            (
-                new_points,
-                difficulty_id,
-            ),
+            (new_points,difficulty_id,),
         )
         self.con.commit()
