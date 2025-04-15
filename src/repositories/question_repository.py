@@ -43,7 +43,14 @@ class QuestionRepository(DatabaseHelper):
 
         if row:
 
-            return {"questionText": row[0],"correctAnswer": row[1],"incorrectAnswer1": row[2],"incorrectAnswer2": row[3],"incorrectAnswer3": row[4],"difficultyID": row[5]}
+            return {
+                "questionText": row[0],
+                "correctAnswer": row[1],
+                "incorrectAnswer1": row[2],
+                "incorrectAnswer2": row[3],
+                "incorrectAnswer3": row[4],
+                "difficultyID": row[5],
+            }
 
         return None  # Returns None if no question was found
 
@@ -104,7 +111,12 @@ class QuestionRepository(DatabaseHelper):
             return None
 
         # Extracting the answers
-        answers = [{"answerText": question_row[1], "isCorrect": 1},{"answerText": question_row[2], "isCorrect": 0},{"answerText": question_row[3], "isCorrect": 0},{"answerText": question_row[4], "isCorrect": 0},]
+        answers = [
+            {"answerText": question_row[1], "isCorrect": 1},
+            {"answerText": question_row[2], "isCorrect": 0},
+            {"answerText": question_row[3], "isCorrect": 0},
+            {"answerText": question_row[4], "isCorrect": 0},
+        ]
 
         return {
             "questionText": question_row[0],
