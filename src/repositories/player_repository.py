@@ -113,9 +113,11 @@ class PlayerRepository(DatabaseHelper):
         achievements = []
         for achievement in results:
 
-            achievements.append({"name": achievement[0], "achieved": achievement[1] == 'Achieved',})
-        
-        return achievements 
-    
-    
+            achievements.append(
+                {
+                    "name": achievement[0],
+                    "achieved": achievement[1] == "Achieved",
+                }
+            )
 
+        return achievements
