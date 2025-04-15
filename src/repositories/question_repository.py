@@ -104,7 +104,7 @@ class QuestionRepository(DatabaseHelper):
             return None
 
         # Extracting the answers
-        answers = [{"answerText": question_row[1], "isCorrect": 1},  # Correct Answer{"answerText": question_row[2], "isCorrect": 0},  # False Answer 1{"answerText": question_row[3], "isCorrect": 0},  # False Answer 2{"answerText": question_row[4], "isCorrect": 0},  # False Answer 3]
+        answers = [{"answerText": question_row[1], "isCorrect": 1},{"answerText": question_row[2], "isCorrect": 0},{"answerText": question_row[3], "isCorrect": 0},{"answerText": question_row[4], "isCorrect": 0},]
 
         return {
             "questionText": question_row[0],
